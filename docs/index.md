@@ -1,20 +1,36 @@
 # ドキュメント索引
 
-バージョン: 0.1
-作成日: 2026-07-03
-ライセンス: Creative Commons Attribution 4.0 International (CC BY 4.0)
-著作者表示: Bourbon-OS
-推奨表示: Bourbon-OS, Project Steward Agent 公開ドキュメント v0.1 (2026-07-03), CC BY 4.0
+**公開状態:** v0.2（docs-only）
 
-推奨される読む順番:
+この公開版は、Project Steward Agent（PSA）の考え方、要件、最初のMVP計画を共有するドキュメントです。実行可能なエージェントやコードは含みません。
 
-1. [Concept](concept.md)
-2. [MVP Plan](mvp_plan.md)
-3. [Requirements](requirements.md)
-4. [Design](design.md)
+## 推奨する読む順番
 
-## 公開範囲
+1. [README](../README.md)：このプロジェクトの短い紹介
+2. [コンセプト](concept.md)：解決したい問題と、Ashiba・KTA・PSAの考え方
+3. [要件](requirements.md)：PSAに期待する振る舞いと、人間に残す判断
+4. [MVP計画](mvp_plan.md)：最初に検証する範囲と、まだ作らないもの
 
-これらの文書は、Project Steward Agent の公開可能なコンセプト、初期要件、設計方針、MVP スコープを説明するものです。
+## 公開するもの
 
-ソースコード、会社固有資料、非公開プロンプト、生成物、調査メモは意図的に含めていません。
+- `README.md`
+- `docs/concept.md`
+- `docs/requirements.md`
+- `docs/mvp_plan.md`
+- `docs/index.md`
+- `LICENSE.md`
+- `NOTICE.md`
+
+## 公開しないもの
+
+- 実行可能なエージェントとソースコード
+- テスト、プロンプト、ローカルのエージェント設定
+- 調査メモ、レビュー記録、作業中のドラフト
+- 会社、顧客、個人に固有の情報
+- ローカルの運用記録
+
+v0.1に含まれていた詳細な設計文書は、未検証の実装方法や役割分担をv0.2で固定しないため、公開対象から外します。具体的な実装設計は、MVPの検証を通じて固まった後に改めて公開を検討します。
+
+## ライセンスと出典
+
+公開文書は、別途明記がない限り[CC BY 4.0](../LICENSE.md)で提供します。著作者表示、推奨する引用、第三者資料との関係は[NOTICE](../NOTICE.md)を参照してください。
