@@ -1,0 +1,13 @@
+project:
+  name: example-project
+  status_file: PROJECT_STATUS.md
+  source_of_truth:
+    - README.md
+    - PROJECT_STATUS.md
+reading:
+  automatic_instruction_files:
+  always_read_files:
+    - README.md
+    - PROJECT_STATUS.md
+  read_when_needed_files:
+  reference_files:

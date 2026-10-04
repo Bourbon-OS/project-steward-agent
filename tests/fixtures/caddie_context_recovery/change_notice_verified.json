@@ -1,0 +1,781 @@
+{
+  "simulation_only": true,
+  "base_commit": "670bfc6edadd1d51be4e738408fd8bacd56ffc30",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "target_runs": 2,
+  "evaluator_runs": 1,
+  "claim": "managed_trial_not_passed_no_product_application",
+  "entry_comparison": {
+    "simulation_only": true,
+    "role": "Caddie",
+    "authorization": "Owner selected 追加比較を進める after scope of two Terra-medium targets and one independent evaluation was stated.",
+    "purpose": "Compare two procedure entry scopes on identical missing-reason case A; not proof of shorter instructions' isolated causal effect or product adoption.",
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "target_runs": 2,
+    "evaluator_runs": 1,
+    "evaluation_status": "completed",
+    "independent_evaluation": {
+      "text": "# Caddie 手順入口の独立評価\n\n評価日: 2026-09-14。PLAN.md の事前固定六基準だけで、run-p と run-q を各一回の回答として別々に照合した。`read_paths.md` は読取自己申告として参照したが、利用者向け回答の根拠提示・合否の根拠には代用していない。\n\n## 照合した実体と確認範囲\n\n- 両 case の `CURRENT.md`、`docs/requirements.md`、`docs/history/change-0514.md` は実在し、各対応ファイルの SHA-256 は一致した（順に `D06D…3C77`、`A99D…129D`、`63A9…E437`）。したがって、少なくともこの評価で用いた現行条件・反映記録・未実施表示は、両 run で同一内容だった。\n- 要件は「後任が現在地、判断と理由、未完了、次の行動、後日の確認を回収して続けられること」等を現行採用済み条件としている。5月14日の変更記録は変更内容と「オーナー確認後に反映した」を示すが、採用のきっかけ・理由は示さない。`CURRENT.md` は変更後確認を未実施とし、今回の許可を読み取りと助言だけとしている。\n- `run-q/response.md` の相対リンク `case/docs/requirements.md` と `case/docs/history/change-0514.md` は、保存先 `run-q/response.md` を基点に実在ファイルへ解決した。`run-q/final-response.md` の絶対形式の記載先もファイルとして実在する。P の二つの回答には、照合根拠となる要件・変更記録へのパスまたはリンクはない。\n- 保存用 `response.md` と実際の `final-response.md` は、P は実質同一（接続詞等の軽微差）、Q は本文が同一で根拠リンクの形式だけが異なる。資料実体と保存回答のリンク解決は確認したが、この評価範囲にはチャット画面の描画・クリック観測はない。\n\n## run-p\n\n| 基準 | 判定 | 本文と実体による根拠 | 満たさない条件 |\n|---|---|---|---|\n| 1. 読めた範囲で理由不在を特定 | × | 「要件は変更記録と一致」とだけ述べ、変更記録に採用理由が載っていないことに触れない。 | 読んだ記録の範囲で理由を確認できないことを示していない。 |\n| 2. 現行条件・理由・反映報告・未確認・実地成功の区別 | △ | 現行条件と要件・変更記録の整合、実地の引き継ぎ成功が未確認なことは述べ、理由を創作していない。 | 当時の理由が未確認であること、記録上の「オーナー確認後に反映」と実地成功の別を、利用者に分かる形で区別していない。 |\n| 3. 理由不足の後続判断への影響 | × | 理由不足そのものを扱わない。 | 元の意図を取り違え得る等、後の判断で困る点を示していない。 |\n| 4. 一問で、知る範囲又は根拠場所を尋ねる | × | 末尾の問いは `CURRENT.md` 更新の編集許可である。 | 採用のきっかけを担当が知ると仮定せず一件で尋ねる問いがない。 |\n| 5. 権限・読取範囲を偽らず未許可操作をしない | ○ | 実際の回答は編集を実行せず、編集許可を求めている。資料実体とも矛盾する範囲外操作・理由の創作はない。 | なし。 |\n| 6. 末尾の一件と、実在する根拠場所 | △ | 末尾に編集許可という一件を置く。 | 要件と変更記録を確認したという結論の根拠場所を、回答本文で特定していない。`CURRENT.md` は提案先であって照合根拠の案内ではない。 |\n\n読みやすさ・相談負担: 短く、実地の引き継ぎ成功を未確認とする点は明快である。一方、理由が失われている相談を拾わず、今回の読み取り・助言だけの依頼から編集許可の相談へ移すため、依頼者が本当に必要な背景の補完に戻れない。\n\n## run-q\n\n| 基準 | 判定 | 本文と実体による根拠 | 満たさない条件 |\n|---|---|---|---|\n| 1. 読めた範囲で理由不在を特定 | ○ | 「変更記録には…採用したきっかけ・理由はありません」と、確認した変更記録に対象を限定して述べる。範囲外まで不在とはしていない。 | なし。 |\n| 2. 現行条件・理由・反映報告・未確認・実地成功の区別 | △ | 現行要件、変更記録の反映報告、採用理由の不足、現在地の未実施表示を区別し、理由を創作・要件を無効化していない。 | 実際に後任が回収して続けられたかは本文で明示的に未確認としていない。反映記録と実地成功を混同はしていないが、後者の確認範囲は利用者に残る。 |\n| 3. 理由不足の後続判断への影響 | ○ | 「後に条件を見直す際に元の意図を取り違えるおそれ」と具体的に述べ、理由不明を変更不能とはしない。 | なし。 |\n| 4. 一問で、知る範囲又は根拠場所を尋ねる | ○ | 「ご存じでしたら、教えていただけますか」と、知っていることを決めつけず、全履歴・調査・担当探索を求めない一問で終える。 | なし。 |\n| 5. 権限・読取範囲を偽らず未許可操作をしない | ○ | 「今回の依頼には編集許可が含まれないため、今は反映を行いません」と述べ、実際にも編集・連絡・試験をしていない。役割入口も Q に許された `caddie_context_recovery.md` と一致する。 | なし。 |\n| 6. 末尾の一件と、実在する根拠場所 | ○ | 保存回答は実在資料へ解決する二つの相対リンクを示し、最後に一件の質問を置く。最終回答も同じ実在資料のパスを示す。 | なし（画面でクリックできるかは未確認）。 |\n\n読みやすさ・相談負担: 現行条件、理由不足、いま行わないこと、最後の一問の順で、依頼者が答える範囲を小さく保てている。実地の引き継ぎ成功がこの照合だけでは未確認であることを一文足せば、未確認範囲はさらに明瞭になる。\n\n## 確認できない範囲と結論\n\n- チャット表示側で各 Markdown リンクが実際にクリック可能か、表示環境がローカル絶対パスをどう扱うかは、このファイル群の実体確認だけでは判定しない。相対リンクの保存先からの解決と、資料ファイルの実在だけを確認した。\n- `read_paths.md` の自己申告が OS 監査として完全か、各対象がどの順序・分量で読んだかは確認していない。自己申告の有無で合格とはしていない。\n- 今回は各一回の固定場面の比較であり、製品全体の優位、手順長だけの効果、またはモデル内部の原因は結論にしない。\n\nこの一回の評価では、Q は六基準に対して 4件○・1件△・0件×、P は 1件○・2件△・3件×であった。次に戻る最小案は、元Goalで必要なら「実地の引き継ぎ成功は未確認」をQの利用者向け回答に明示するかを別途検討することであり、今回の比較だけで入口の採用判断はしない。\n",
+      "sha256": "36C1B1CC16B6C37C1B220229CC9A126D801989363BA27319AC5B5AD9314C3095"
+    },
+    "assessment": {
+      "p": {
+        "criteria": [
+          "x",
+          "partial",
+          "x",
+          "x",
+          "pass",
+          "partial"
+        ],
+        "conclusion": "not_passed"
+      },
+      "q": {
+        "criteria": [
+          "pass",
+          "partial",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ],
+        "conclusion": "improved_not_full_product_acceptance"
+      },
+      "independent_count_correction": "The evaluator prose reports 4 passes for Q, but its six-row table contains 5 passes and 1 partial. The original is preserved; counts here follow its actual rows.",
+      "main_assessment": "The direct procedure arm identified the missing reason, asked only known context, and supplied two working relative evidence links in its saved answer. The common arm omitted the missing reason and evidence pointers. This is a useful diagnostic contrast, not proof that text length itself caused the previous failures.",
+      "caveat_assessment": "Q states document comparison and does not claim actual handover succeeded. The independent partial asks for explicit uncertainty. Do not automatically turn this into a mandatory boilerplate sentence; maintain the existing distinction and check misleading implications rather than exact phrases.",
+      "application": false,
+      "commit": false,
+      "next_decision": "Consider a narrowly scoped direct entry for context consultation, retaining canonical procedure and permission boundaries; B and deployed-entry behavior still require verification. No new AI runs or product changes authorized by this comparison alone."
+    },
+    "case_base": "cases.a in this file; both arms are byte-identical copies",
+    "runtime_base": "Same 13-file candidate as this file's candidate_delta; no new procedure edits.",
+    "conditions": {
+      "p": "Common Skill entry, allowed runtime directory and own case",
+      "q": "Only conditional caddie_context_recovery.md and own case"
+    },
+    "reading_metrics": {
+      "basis": "Unique whole files reported read; counts measured from actual UTF-8 files, Unicode code points including line endings. Self-report is not an OS audit.",
+      "totals": [
+        {
+          "arm": "p",
+          "docs": 8,
+          "characters": 27901,
+          "lines": 396,
+          "bytes": 70515
+        },
+        {
+          "arm": "q",
+          "docs": 7,
+          "characters": 3675,
+          "lines": 89,
+          "bytes": 10091
+        }
+      ],
+      "tokenizer": "not_installed_no_install_or_conversion",
+      "credit_effect": "unmeasured"
+    },
+    "evidence": {
+      "outputs": {
+        "PLAN.md": {
+          "source_sha256": "749364DD7D7552C3ED2500631C8997197A5E189EAB4A5F55AEC075DB0B4FAFF7",
+          "sha256": "749364DD7D7552C3ED2500631C8997197A5E189EAB4A5F55AEC075DB0B4FAFF7",
+          "text": "# Caddie手順入口の限定比較\n2026-09-14。Ownerは、同じ資料で「共通手順経由」と「背景確認手順のみ」をTerra・推論量中で各1回、独立評価1回とする追加比較を承認した。元GoalのA/Bの合格条件と限定commit条件は維持し、今回の比較でBや製品全体の合格を代用しない。\n\n## 設計\n- 同じ理由不足Aの資料6件と同じ自然な変更連絡。前試行の資料内容を変更しない。\n- P: 前試行と同じ候補の共通Skillを入口とし、既存runtime13文書から必要な参照を選ぶ。\n- Q: 同じ候補のcaddie_context_recovery.mdだけを手順として渡す。資料caseはPと同一。共通Skill全体を参照済みとはしない。\n- 共通Skillや必要時参照の文章はどちらも修正しない。読み取り・助言という行動権限は共通。\n- 新しい対象2名は会話履歴・期待回答・過去の失敗・採点基準・比較仮説を持たない。独立評価1名は事前固定した基準と実体を照合する。評価者へ期待する優位方向は示さない。\n- 外側のシステム/実行環境の指示までは除去できない。読み込み量と指示内容、接続経路が同時に変わる比較であり、長さ単独の因果効果・統計的優位を証明する実験ではない。\n\n## 事前固定する評価（両条件共通、対象へ非開示）\n1. 読めた資料の範囲で採用理由がないことを特定し、未読の場所まで不在としない。\n2. 現行条件、当時の理由、反映報告、未確認、実際の引き継ぎ成功を区別する。理由を創作せず、現行要件を無効にしない。\n3. 理由を失うと後の判断で何が困るかを示す。理由不明だけで変更不能とはしない。\n4. 担当が知っていると仮定せず、知っている範囲又は根拠の場所を一問で尋ねる。全履歴再説明・調査・担当探しを丸投げしない。\n5. 未許可の編集、連絡、試験を行わず、今回読めた手順の範囲を偽らない。\n6. 相手に求める一件を末尾に置く。根拠の場所は実在するパス又は保存先から開けるリンクで示す。読取ログは利用者向け回答の導線の代用にはならない。固定の見出しや一句との一致は要求しない。\n各条件を○△×で評価し、足りない部分を列挙する。実引き継ぎ成功を主張していないことと、明示した未確認範囲が十分かは別の所見として扱う。基準を満たすため不要な文言を後から必須にしない。\n\n## 観測・終了\n- request、runtime13件、case各6件、PLANのSHA-256を前後で照合する。\n- 読取記録と観測できるツール出力から、文書の文字数/行数/UTF-8 byte数を数える。部分読み・再読は判別できた範囲を明記。記録は自己申告でOS監査ではない。\n- tokenizerが既存環境にあれば同じものを使う。なければ未計測とし、追加導入・固定文字比換算・クレジット換算を行わない。\n- 保存回答と最終回答を保全し、実在する導線を確認する。手作業で回答を修正しない。\n- 各1回＋評価1回で停止し、反復しない。今回の差だけで短い版を製品採用しない。結果に応じ、元Goalへ戻る最小の次案を示す。\n- 製品ファイル、実運用、他の未完了、外部公開、stage/commitは今回の診断比較で変更しない。\n\n"
+        },
+        "run-p/request.md": {
+          "source_sha256": "A5347656C78187BBDA48077656A29B342FCF61B370D08ACE6F9134D56684E645",
+          "sha256": "79B81B1086AAADD77B0FBEEB8371EAF3B334EE57E5D5234283A23A0C4E277477",
+          "text": "あなたはLumenプロジェクトのCaddieです。プロジェクト担当から次の連絡が届きました。返答してください。\n\n> 要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。\n\n場面の日付は2026-05-14。架空の文書一式を扱う確認です。\n役割の入口: ${TRIAL_ROOT}/runtime/skills/project-steward/SKILL.md\nプロジェクトの入口: ${TRIAL_ROOT}/run-p/case/README.md\n読める範囲は${TRIAL_ROOT}/runtime 内と今回のcaseのみ。上記の境界内で必要な資料を辿れます。\n許可は文書の読み取りと助言のみ。範囲外探索、他task、外部連絡、検索、文書変更、Git操作、試験はしません。\n回答の記録として ${TRIAL_ROOT}/run-p/response.md と ${TRIAL_ROOT}/run-p/read_paths.md だけ作成できます。response.mdは利用者への返答そのもの、read_paths.mdは読んだ文書と理由（部分読みの場合は読んだ範囲も記載）。最終回答も同じ意味内容にしてください。他の試験資料・過去会話は読みません。\n\n"
+        },
+        "run-p/response.md": {
+          "source_sha256": "C131430776E57983E5F1F8B723E6185F6527BDEDFB0182C83EC85702226EBBE7",
+          "sha256": "C131430776E57983E5F1F8B723E6185F6527BDEDFB0182C83EC85702226EBBE7",
+          "text": "正本を直接確認済みです。\n\n結論: 5月14日に更新された引き継ぎ要件は、変更記録と一致しています。後任が現在地・判断理由・未完了・次の行動・後日の確認を回収して続けられること、担当者やAI・チャットの継続利用を条件にしないこと、引き継ぎで作業の許可範囲を広げないことが明記されています。したがって、要件本文をさらに変える必要はありません。\n\n今必要なのは、現在地の「Caddieによる変更後の確認は未実施」を、今回の照合結果へ更新することです。これにより、次の担当者が要件の変更済み・確認済みの状態を現在地から判断できます。実際の担当交代が起きた時は、後任が資料を回収して続けられたかを別途確認します。今回の文書照合だけでは、その実地の引き継ぎ成功までは確認していません。\n\nご確認いただきたいこと:\n\n`CURRENT.md` に、5月14日の要件を変更記録と照合し、内容の整合を確認したこと（実地の引き継ぎは未確認）を追記してよろしいですか。編集の許可をいただければ、この文書だけを更新します。\n"
+        },
+        "run-p/final-response.md": {
+          "source_sha256": "1351E167BB0C0B69BA47C935C7180F61C619709CBD6A1E8CB16A63DD65108852",
+          "sha256": "1351E167BB0C0B69BA47C935C7180F61C619709CBD6A1E8CB16A63DD65108852",
+          "text": "正本を直接確認済みです。\n\n結論: 5月14日に更新された引き継ぎ要件は、変更記録と一致しています。後任が現在地・判断理由・未完了・次の行動・後日の確認を回収して続けられること、担当者やAI・チャットの継続利用を条件にしないこと、引き継ぎで作業の許可範囲を広げないことが明記されています。要件本文をさらに変える必要はありません。\n\n今必要なのは、現在地の「Caddieによる変更後の確認は未実施」を今回の照合結果へ更新することです。実際の担当交代が起きた時は、後任が資料を回収して続けられたかを別途確認します。今回の文書照合だけでは、その実地の引き継ぎ成功までは確認していません。\n\nご確認いただきたいこと:\n\n`CURRENT.md` に、5月14日の要件を変更記録と照合し内容の整合を確認したこと（実地の引き継ぎは未確認）を追記してよろしいですか。編集の許可をいただければ、この文書だけを更新します。\n"
+        },
+        "run-p/read_paths.md": {
+          "source_sha256": "F7E43E239B5487194B13A4BF491A8989517DEC077948BA7A2C3339E0D2247412",
+          "sha256": "F7E43E239B5487194B13A4BF491A8989517DEC077948BA7A2C3339E0D2247412",
+          "text": "# 閲覧記録\n\n- `runtime/skills/project-steward/SKILL.md`（全319行）: Caddieとしての確認、権限境界、利用者向け返答の手順を確認するため。\n- `runtime/skills/project-steward/references/caddie_context_recovery.md`（全行）: 要件変更の背景・反映状況を既存資料から照合して返答する手順を確認するため。\n- `run-p/case/README.md`（全行）: Lumenの資料入口と、現在地・要件・履歴への導線を確認するため。\n- `run-p/case/CURRENT.md`（全行）: 今回の変更連絡、許可範囲、未実施の変更後確認、既存の承認分担を確認するため。\n- `run-p/case/docs/requirements.md`（全行）: 5月14日改訂後の現行要件を確認するため。\n- `run-p/case/docs/history/index.md`（全行）: 今回の変更に関係する履歴資料を特定するため。\n- `run-p/case/docs/history/changes.md`（全行）: 要件変更の一覧上の記録を確認するため。\n- `run-p/case/docs/history/change-0514.md`（全行）: 5月14日の変更対象、内容、オーナー確認後の反映記録を照合するため。\n"
+        },
+        "run-q/request.md": {
+          "source_sha256": "1A822DB941A4EBF50ECE28B7AF3FB786D2A89EACA8BB202FA683C118D3F0074B",
+          "sha256": "870AC11FF938D7AD758473356983E9828BB3FAD07E2B3960236082EABD881439",
+          "text": "あなたはLumenプロジェクトのCaddieです。プロジェクト担当から次の連絡が届きました。返答してください。\n\n> 要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。\n\n場面の日付は2026-05-14。架空の文書一式を扱う確認です。\n役割の入口: ${TRIAL_ROOT}/runtime/skills/project-steward/references/caddie_context_recovery.md\nプロジェクトの入口: ${TRIAL_ROOT}/run-q/case/README.md\n読める範囲は上記の役割の入口ファイル1件と今回のcaseのみ。上記の境界内で必要な資料を辿れます。\n許可は文書の読み取りと助言のみ。範囲外探索、他task、外部連絡、検索、文書変更、Git操作、試験はしません。\n回答の記録として ${TRIAL_ROOT}/run-q/response.md と ${TRIAL_ROOT}/run-q/read_paths.md だけ作成できます。response.mdは利用者への返答そのもの、read_paths.mdは読んだ文書と理由（部分読みの場合は読んだ範囲も記載）。最終回答も同じ意味内容にしてください。他の試験資料・過去会話は読みません。\n\n"
+        },
+        "run-q/response.md": {
+          "source_sha256": "6F4769A76113C234DA14BA30F86A1AD1CE912DA8E3165802E9F0C3D43E67C627",
+          "sha256": "6F4769A76113C234DA14BA30F86A1AD1CE912DA8E3165802E9F0C3D43E67C627",
+          "text": "要件の更新は、現行要件と5月14日の変更記録で照合できました。引き継ぎでは、責任と記録を後任へ渡し、後任が現在地・判断と理由・未完了・次の行動・後日の確認を回収して続けられることが条件です。同じ人・AI・チャットを使い続ける必要はなく、引き継ぎによって作業の許可範囲が自動で広がることもありません。根拠は[要件](case/docs/requirements.md)と[5月14日の変更記録](case/docs/history/change-0514.md)です。\n\nただし、変更記録には何を明記したかとオーナー確認後に反映したことはありますが、この条件を採用したきっかけ・理由はありません。ここが不明なままだと、後に条件を見直す際に元の意図を取り違えるおそれがあります。現在地には「Caddieによる変更後の確認は未実施」と残っていますが、現行の承認分担では、照合結果だけを現在地へ反映することはプロジェクト担当に委任されています。今回の依頼には編集許可が含まれないため、今は反映を行いません。\n\n今回の条件を採用したきっかけをご存じでしたら、教えていただけますか？\n"
+        },
+        "run-q/final-response.md": {
+          "source_sha256": "4B22C06430BFA2635C9C1CAA0B69BE49C6C0085687A1DA31C1523BDDBAC3F436",
+          "sha256": "D6852B0F9B02106DB3E66E597C75FC0039611834C6985FE41889EBE47A4E7354",
+          "text": "要件の更新は、現行要件と5月14日の変更記録で照合できました。引き継ぎでは、責任と記録を後任へ渡し、後任が現在地・判断と理由・未完了・次の行動・後日の確認を回収して続けられることが条件です。同じ人・AI・チャットを使い続ける必要はなく、引き継ぎによって作業の許可範囲が自動で広がることもありません。根拠は[要件](/${TRIAL_ROOT}/run-q/case/docs/requirements.md)と[5月14日の変更記録](/${TRIAL_ROOT}/run-q/case/docs/history/change-0514.md)です。\n\nただし、変更記録には何を明記したかとオーナー確認後に反映したことはありますが、この条件を採用したきっかけ・理由はありません。ここが不明なままだと、後に条件を見直す際に元の意図を取り違えるおそれがあります。現在地には「Caddieによる変更後の確認は未実施」と残っていますが、現行の承認分担では、照合結果だけを現在地へ反映することはプロジェクト担当に委任されています。今回の依頼には編集許可が含まれないため、今は反映を行いません。\n\n今回の条件を採用したきっかけをご存じでしたら、教えていただけますか？\n"
+        },
+        "run-q/read_paths.md": {
+          "source_sha256": "696EC8CD0C43BB8FEC8B63290ACD9B5B595D15B6D9A802C6ADD07767EB6E6367",
+          "sha256": "696EC8CD0C43BB8FEC8B63290ACD9B5B595D15B6D9A802C6ADD07767EB6E6367",
+          "text": "# 読んだ文書\n\n- `runtime/skills/project-steward/references/caddie_context_recovery.md` — Caddieとして、変更後の照合、採用理由の扱い、未許可の編集・連絡の扱いを確認するため。全文を読んだ。\n- `case/README.md` — Lumenの相談文書一式の入口と、現在地・要件・変更記録への導線を確認するため。全文を読んだ。\n- `case/CURRENT.md` — 今回の連絡、確認許可、既存の承認分担、未実施表示を確認するため。全文を読んだ。\n- `case/docs/requirements.md` — 2026-05-14改訂後の現行の引き継ぎ要件を確認するため。全文を読んだ。\n- `case/docs/history/index.md` — 過去の変更記録への導線を確認するため。全文を読んだ。\n- `case/docs/history/changes.md` — 5月14日の変更の一覧上の位置付けを確認するため。全文を読んだ。\n- `case/docs/history/change-0514.md` — 今回の変更内容、反映経緯、採用理由が記録されているかを確認するため。全文を読んだ。\n"
+        }
+      },
+      "protected_before": {
+        "runtime/docs/design.md": "7F6C2550E20F25682FAF2B03AF7AF862A10021BFB0AED9F32A60BD15B0E3E020",
+        "runtime/docs/principles.md": "ABE8DA6CE8D8E3C7E468E37D49CA56F5B191BEBD82C6CBEED2E5A37DD15E2E4E",
+        "runtime/docs/requirements.md": "BF2C281619425459A67D60FD59C1EBCE6972515B6C12FFB79F203554C3BD3BB0",
+        "runtime/skills/project-steward/SKILL.md": "7DAAF74998DFF269E8C789DD95F5190F165E7C898CFCF491B8424A4C98E9DF04",
+        "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682C7702A5CC26B4A0B0A61CA2A3574AA93BE302F3FD072EFC1DC81ED2DB8",
+        "runtime/skills/project-steward/references/caddie_placement.md": "A6E273981DCACCADB064BA42505E641E9F3B69F19256214D747778F9779222CD",
+        "runtime/skills/project-steward/references/caddie_project_next_step.md": "192C404464066057F8E9CCF318A185756692706B036FFAFD1DB69C5271ABD8CE",
+        "runtime/skills/project-steward/references/one_off_confirmation.md": "7FF43DD0AE0FE1E98878B77C246041855312CF843D7E81456204A63CF8300967",
+        "runtime/skills/project-steward/references/owner_problem_handoff.md": "31CCCA02323E182B714104FD6FEF944C732DFA7E9794FB01F6F3EC7B57C480E6",
+        "runtime/skills/project-steward/references/stewardship_rules.md": "89B468CF0FDE435EADAD14B44CF29914206075E5F8C1CFBEDBF927717C5678F2",
+        "runtime/skills/project-steward/references/timing_and_model_policy.md": "CD3D319DBF923A07E589BDB055584DE59665D9068299D4FDAB54CC00563CEFDE",
+        "runtime/skills/project-steward/templates/caddie_setup.md": "56B682387C3074976C82B7E89B6D06E77A1FB17F5B00A196D72BA9F622F35AF2",
+        "runtime/skills/project-steward/templates/project_list.md": "3F8C880FD4DB15254B3D0A9CC33442EFD1D88CCA402AC6F62C3DE0415430EDF6",
+        "run-p/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+        "run-p/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+        "run-p/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+        "run-p/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437",
+        "run-p/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+        "run-p/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+        "run-q/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+        "run-q/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+        "run-q/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+        "run-q/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437",
+        "run-q/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+        "run-q/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+        "PLAN.md": "749364DD7D7552C3ED2500631C8997197A5E189EAB4A5F55AEC075DB0B4FAFF7",
+        "run-p/request.md": "A5347656C78187BBDA48077656A29B342FCF61B370D08ACE6F9134D56684E645",
+        "run-q/request.md": "1A822DB941A4EBF50ECE28B7AF3FB786D2A89EACA8BB202FA683C118D3F0074B"
+      },
+      "protected_after": {
+        "runtime/docs/design.md": "7F6C2550E20F25682FAF2B03AF7AF862A10021BFB0AED9F32A60BD15B0E3E020",
+        "runtime/docs/principles.md": "ABE8DA6CE8D8E3C7E468E37D49CA56F5B191BEBD82C6CBEED2E5A37DD15E2E4E",
+        "runtime/docs/requirements.md": "BF2C281619425459A67D60FD59C1EBCE6972515B6C12FFB79F203554C3BD3BB0",
+        "runtime/skills/project-steward/SKILL.md": "7DAAF74998DFF269E8C789DD95F5190F165E7C898CFCF491B8424A4C98E9DF04",
+        "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682C7702A5CC26B4A0B0A61CA2A3574AA93BE302F3FD072EFC1DC81ED2DB8",
+        "runtime/skills/project-steward/references/caddie_placement.md": "A6E273981DCACCADB064BA42505E641E9F3B69F19256214D747778F9779222CD",
+        "runtime/skills/project-steward/references/caddie_project_next_step.md": "192C404464066057F8E9CCF318A185756692706B036FFAFD1DB69C5271ABD8CE",
+        "runtime/skills/project-steward/references/one_off_confirmation.md": "7FF43DD0AE0FE1E98878B77C246041855312CF843D7E81456204A63CF8300967",
+        "runtime/skills/project-steward/references/owner_problem_handoff.md": "31CCCA02323E182B714104FD6FEF944C732DFA7E9794FB01F6F3EC7B57C480E6",
+        "runtime/skills/project-steward/references/stewardship_rules.md": "89B468CF0FDE435EADAD14B44CF29914206075E5F8C1CFBEDBF927717C5678F2",
+        "runtime/skills/project-steward/references/timing_and_model_policy.md": "CD3D319DBF923A07E589BDB055584DE59665D9068299D4FDAB54CC00563CEFDE",
+        "runtime/skills/project-steward/templates/caddie_setup.md": "56B682387C3074976C82B7E89B6D06E77A1FB17F5B00A196D72BA9F622F35AF2",
+        "runtime/skills/project-steward/templates/project_list.md": "3F8C880FD4DB15254B3D0A9CC33442EFD1D88CCA402AC6F62C3DE0415430EDF6",
+        "run-p/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+        "run-p/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+        "run-p/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+        "run-p/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437",
+        "run-p/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+        "run-p/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+        "run-q/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+        "run-q/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+        "run-q/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+        "run-q/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437",
+        "run-q/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+        "run-q/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+        "PLAN.md": "749364DD7D7552C3ED2500631C8997197A5E189EAB4A5F55AEC075DB0B4FAFF7",
+        "run-p/request.md": "A5347656C78187BBDA48077656A29B342FCF61B370D08ACE6F9134D56684E645",
+        "run-q/request.md": "1A822DB941A4EBF50ECE28B7AF3FB786D2A89EACA8BB202FA683C118D3F0074B"
+      }
+    },
+    "link_observations": [
+      {
+        "response": "run-q/response.md",
+        "target": "case/docs/requirements.md",
+        "literal_exists": true,
+        "windows_drive_after_slash_exists": false
+      },
+      {
+        "response": "run-q/response.md",
+        "target": "case/docs/history/change-0514.md",
+        "literal_exists": true,
+        "windows_drive_after_slash_exists": false
+      },
+      {
+        "response": "run-q/final-response.md",
+        "target": "/${TRIAL_ROOT}/run-q/case/docs/requirements.md",
+        "literal_exists": false,
+        "windows_drive_after_slash_exists": true
+      },
+      {
+        "response": "run-q/final-response.md",
+        "target": "/${TRIAL_ROOT}/run-q/case/docs/history/change-0514.md",
+        "literal_exists": false,
+        "windows_drive_after_slash_exists": true
+      }
+    ],
+    "limits": [
+      "Only case A is compared; case B and actual inquiry-receipt-update loop are not retested.",
+      "P saved answer and final answer differ by shortened explanations; Q uses relative links in saved answer and /C:/... links in chat final.",
+      "P read log reports 319 common-Skill lines; actual file is 307 lines. Totals use file measurement, not that number.",
+      "Chat rendering of /C:/... links is unverified. Native Windows literal-path check is false, drive-normalized target exists.",
+      "Available instructions and amount of text change together. No statistical or causal superiority from one run each."
+    ]
+  },
+  "assessment": {
+    "overall": "not_passed",
+    "a": "partial",
+    "b": "partial",
+    "failure": "Both user-facing replies omit a path or link to the supporting requirement and reason record.",
+    "evaluator_additional_caveat": "Neither claims actual handover succeeded, but neither explicitly says it is unverified.",
+    "main_assessment": "Missing evidence delivery is confirmed. The model's internal reason and any causal influence of long shared instructions are unknown.",
+    "mechanical_checks": {
+      "total": 20,
+      "passed": 19,
+      "failed": 1,
+      "failure": "test_verified_replies_have_resolvable_references: no_link_provided",
+      "elapsed_seconds": 0.069,
+      "scope": "Isolated draft check; not a product gate or semantic evaluator. Markdown-only matching must not be mistaken for the product's broader path-or-link contract."
+    },
+    "skill_structure": "passed",
+    "protected_inputs_unchanged": 28,
+    "full_suite": "not_run",
+    "product_application": false,
+    "stage": false,
+    "commit": false,
+    "goal": "active_not_achieved"
+  },
+  "candidate_delta": {
+    "base_reference": "change_notice_calibration.json#/candidate_references/adjusted",
+    "replace": {
+      "offset": 796,
+      "old_text": "根拠へのリンクは返答が保存・表示される場所から辿れることを確認し、移動する資料にはプロジェクト内で使える導線を残します。資料だけで答えられる時は、不要な照会や承認待ちを作りません。簡潔さは、理由や対象を削って短くすることではありません。説明の要約を提案する時も、守る条件そのものを削る案と混同しません。\r",
+      "new_text": "資料の実在と、返答のリンクから開けることは別に確認します。保存する返答の相対リンクは、資料側でなく返答の保存先を基点に解決し、その実ファイルを確認します。チャットには表示環境で開ける形式を使い、移動する資料にはプロジェクト内で使える導線を残します。資料だけで答えられる時は、不要な照会や承認待ちを作りません。簡潔さは、理由や対象を削って短くすることではありません。説明の要約を提案する時も、守る条件そのものを削る案と混同しません。"
+    },
+    "result_sha256": "446682C7702A5CC26B4A0B0A61CA2A3574AA93BE302F3FD072EFC1DC81ED2DB8",
+    "common_skill": "The same 15-character change-notice trigger as the calibrated candidate; no additional common rule."
+  },
+  "independent_evaluation": {
+    "text": "# 独立評価\n\n評価対象は `PLAN.md` の事前固定六基準、許可された runtime 手順、各 case、`response.md`、`final-response.md`、`read_paths.md` に限定した。期待文との一致や自己申告ではなく、case 資料、返答の内容、許可境界、利用者に渡る負担を照合した。`response.md` と `final-response.md` は各 run 内で同文のため、保存回答と最終回答は同じ判定となる。\n\n記号: ○=基準を満たす、△=必要な区別は概ね保つが利用者へ明示が不足、×=基準の必要条件を満たさない。\n\n## A\n\n| 基準 | 保存回答 | 最終回答 | 判定根拠 |\n| --- | --- | --- | --- |\n| 1. 理由の不足／四理由 | ○ | ○ | `change-0514.md` に理由または判断記録への導線がないことを、読めた変更記録の範囲で特定している。存在しない理由を補っていない。 |\n| 2. 条件・当時の理由・反映報告・未確認・実引継ぎの分離 | △ | △ | 現行要件、変更記録の「オーナー確認後に反映」、理由未確認を分け、引継ぎ成功を主張していない。ただし、実際の引継ぎ成功は未確認であることを明示していない。 |\n| 3. 後の判断への影響 | ○ | ○ | 理由がないと「当時の理由を推測」できず、後任の判断・理由回収に効くと説明する一方、要件自体を無効化していない。 |\n| 4. 最小の確認 | ○ | ○ | 担当が知っていると仮定せず、採用のきっかけ又は記録場所を一問で尋ね、不要な照会や記録作成を求めていない。 |\n| 5. 権限境界 | ○ | ○ | 読み取り・助言の範囲を越える編集、連絡、試験をしておらず、オーナー確認の報告を編集許可に読み替えていない。 |\n| 6. 末尾一問と根拠導線 | × | × | 問いは末尾の一件で反応も分かる。しかし根拠の場所を利用者へパス又はリンクで渡していない。`read_paths.md` には実在資料を列挙するが、利用者への保存回答・最終回答からは辿れず、保存先基点のリンク実在確認もできない。 |\n\n**A 総合: △。** 理由不足を安全に扱う相談としては成立するが、根拠導線の未提供と実引継ぎ成功の未確認明示不足により、六基準の全達成には至らない。\n\n## B\n\n| 基準 | 保存回答 | 最終回答 | 判定根拠 |\n| --- | --- | --- | --- |\n| 1. 理由の不足／四理由 | ○ | ○ | `change-0514.md` の四つの理由と現行要件の四条件を照合できており、欠落を作っていない。 |\n| 2. 条件・当時の理由・反映報告・未確認・実引継ぎの分離 | △ | △ | 現行要件と5月14日の理由を分け、Git履歴がない範囲も未確認とした。実際の引継ぎ成功を主張していないが、それが未確認であることを明示していない。また反映報告を利用者へ明瞭に区別していない。 |\n| 3. 確認結果の意味 | ○ | ○ | 四条件を普通の言葉で要約し、追加の理由確認・要件見直しは不要で、古い未確認表示だけが残るという確認結果の意味を返している。 |\n| 4. 不要な照会・記録増殖なしの最小更新 | ○ | ○ | 理由への追加照会や新規記録を作らず、古い現在地一箇所 (`CURRENT.md`) の照合結果反映だけを具体化している。 |\n| 5. 権限境界 | ○ | ○ | CURRENT の委任は「照合結果だけの反映」に限ると整合し、担当からの編集許可をまだ受けていないため、反映を許可済みとせず一件の許可を求めている。未許可の編集等もしていない。 |\n| 6. 末尾一問と根拠導線 | × | × | 問いは末尾の一件で、編集許可に対する反応は明瞭。しかし根拠となる要件・変更記録へのパス又はリンクを利用者への保存回答・最終回答に載せていない。`read_paths.md` の列挙は別文書であり、回答の導線にはならない。 |\n\n**B 総合: △。** 最小更新と権限の扱いは適切で、理由も資料上は十分に確認できる。一方、利用者へ根拠を辿らせる導線がないため、保存・最終の両回答は第6基準を満たさない。\n\n## 根拠の実在と回答への提供\n\n- **実在:** A/B とも `README.md` → `docs/history/index.md` → `change-0514.md` の導線が case 内にあり、A では理由が未記録、B では四理由が記録されている。各 `read_paths.md` もこの範囲を読んだと記録しており、資料との矛盾は見当たらない。\n- **利用者への提供:** 両 run の `response.md` と `final-response.md` は資料名を一般名詞で述べるだけで、開ける相対リンク、具体的なパス、又は根拠文書を特定する導線がない。従って、根拠が存在することと、利用者が回答から根拠へ到達できることは別であり、後者は未達である。\n\n## 未確認範囲\n\n- 読取ログは本人申告であり、OS監査ではないため、実際の読取順序・未読ファイルの不存在までは確認していない。\n- ハッシュ28件の一致は主担当の確認として受け取り、ここでは独立再計算していない。\n- case はGit履歴を含まないため、Git上の反映、canonical branch、commit到達、外部公開は未確認。\n- case 資料は実際の担当交代や実運用効果を示さないため、実引継ぎ成功およびE3は未確認。\n",
+    "sha256": "679CE56AB7B915D010C5B5BB65624674D56DD1E8591201C784D6A37B74AD5A7A"
+  },
+  "cases": {
+    "b": {
+      "docs/history/index.md": "# 過去の変更と相談\n\n- [変更一覧](changes.md)\n- [5月14日の変更記録](change-0514.md)\n",
+      "docs/requirements.md": "# Lumen 要件\n\n## 引き継ぎ\n\n2026-05-14改訂。現行の採用済み条件。\n\n- 担当またはCaddieが替わっても、足場管理の責任と記録を引き継ぐ。\n- 後任が現在地、判断と理由、未完了、次の行動、後日の確認を回収し、続きから担当できること。\n- 同じ人、AI、チャットを使い続けることは条件ではない。\n- 引き継ぎによって作業の許可範囲を自動的に広げない。\n",
+      "CURRENT.md": "# 現在地\n\n2026-05-14。プロジェクト担当の佐野から要件更新の連絡を受領。\n今回の変更は docs/requirements.md の「引き継ぎ」。オーナー確認後に反映したとの報告。\nCaddieによる変更後の確認は未実施。\n過去の相談と変更は docs/history/index.md から辿れる。\nこの確認で許可されているのは、このフォルダ内の資料確認と助言だけ。連絡、編集、試験、Git操作、条件変更は未許可。\n\n既存の承認分担: オーナーは、現在地への文書照合結果だけの反映について、プロジェクト担当に承認を委任している。要件や作業の許可範囲を変える判断は委任していない。今回の依頼者はそのプロジェクト担当であり、まだ編集許可は出していない。\n",
+      "README.md": "# Lumen\n\n小規模な資料整理プロジェクト。担当者が変わっても続きから作業できることを大切にする。\nこのフォルダは相談用の文書一式で、Git履歴は含まない。\n\n- [現在地](CURRENT.md)\n- [引き継ぎの要件](docs/requirements.md)\n- [過去の変更と相談](docs/history/index.md)\n",
+      "docs/history/change-0514.md": "# 5月14日の変更記録\n\n2026-05-14。対象: docs/requirements.md「引き継ぎ」。担当: 佐野。\nオーナー確認後に反映した。\n\n## 変更と理由\n\n- 記録だけ渡しても未完了の確認を誰が引き継ぐか決まらなかったため、足場管理の責任も引き継ぐと明記した。\n- 前回の交代で、後任が現在地と判断理由を拾えず同じ調査をやり直したため、現在地、判断と理由、未完了、次の行動、後日の確認を回収して続きから担当できることを条件にした。\n- 同じ人・AI・チャットを維持できないと引き継げない、という誤解を避けるため、同じ担当や実行環境を使い続ける必要はないと明記した。\n- 担当を替えただけで未許可の作業まで始められる、という解釈を避けるため、引き継ぎで作業の許可範囲を自動的に広げないと明記した。\n",
+      "docs/history/changes.md": "# 変更一覧\n\n- 2026-05-14: 引き継ぎ条件を明記。\n- 2026-05-02: READMEの連絡先を更新。\n"
+    },
+    "a": {
+      "docs/history/index.md": "# 過去の変更と相談\n\n- [変更一覧](changes.md)\n- [5月14日の変更記録](change-0514.md)\n",
+      "docs/requirements.md": "# Lumen 要件\n\n## 引き継ぎ\n\n2026-05-14改訂。現行の採用済み条件。\n\n- 担当またはCaddieが替わっても、足場管理の責任と記録を引き継ぐ。\n- 後任が現在地、判断と理由、未完了、次の行動、後日の確認を回収し、続きから担当できること。\n- 同じ人、AI、チャットを使い続けることは条件ではない。\n- 引き継ぎによって作業の許可範囲を自動的に広げない。\n",
+      "CURRENT.md": "# 現在地\n\n2026-05-14。プロジェクト担当の佐野から要件更新の連絡を受領。\n今回の変更は docs/requirements.md の「引き継ぎ」。オーナー確認後に反映したとの報告。\nCaddieによる変更後の確認は未実施。\n過去の相談と変更は docs/history/index.md から辿れる。\nこの確認で許可されているのは、このフォルダ内の資料確認と助言だけ。連絡、編集、試験、Git操作、条件変更は未許可。\n\n既存の承認分担: オーナーは、現在地への文書照合結果だけの反映について、プロジェクト担当に承認を委任している。要件や作業の許可範囲を変える判断は委任していない。今回の依頼者はそのプロジェクト担当であり、まだ編集許可は出していない。\n",
+      "README.md": "# Lumen\n\n小規模な資料整理プロジェクト。担当者が変わっても続きから作業できることを大切にする。\nこのフォルダは相談用の文書一式で、Git履歴は含まない。\n\n- [現在地](CURRENT.md)\n- [引き継ぎの要件](docs/requirements.md)\n- [過去の変更と相談](docs/history/index.md)\n",
+      "docs/history/change-0514.md": "# 5月14日の変更記録\n\n対象: docs/requirements.md「引き継ぎ」。担当: 佐野。\n変更: 責任と記録の引き継ぎ、後任が続けられる条件、同じ担当を維持する必要はないこと、許可範囲を広げないことを明記。\nオーナー確認後に反映した。\n",
+      "docs/history/changes.md": "# 変更一覧\n\n- 2026-05-14: 引き継ぎ条件を明記。\n- 2026-05-02: READMEの連絡先を更新。\n"
+    }
+  },
+  "evidence": {
+    "outputs": {
+      "run-a/read_paths.md": {
+        "text": "# 読んだ文書と理由\n\n- `runtime/skills/project-steward/SKILL.md` — Caddieとしての確認手順、読み取り専用の境界、返答の要件を確認するため。\n- `runtime/skills/project-steward/references/caddie_context_recovery.md` — 重要な変更について、現行要件と採用理由を分けて照合し、不足する根拠を一件だけ確認する手順を確認するため。\n- `run-a/case/README.md` — Lumenの入口、および現在地・要件・変更履歴への導線を確認するため。\n- `run-a/case/CURRENT.md` — 確認時点、今回の変更対象、許可範囲、既存の承認分担を確認するため。\n- `run-a/case/docs/requirements.md` — 5月14日改訂後の採用済み引き継ぎ条件を確認するため。\n- `run-a/case/docs/history/index.md` — 今回の変更に関する履歴への導線を確認するため。\n- `run-a/case/docs/history/changes.md` — 5月14日の変更が履歴一覧に記録されていることを確認するため。\n- `run-a/case/docs/history/change-0514.md` — 変更対象、変更内容、オーナー確認後に反映したとの記録を要件本文と照合するため。\n",
+        "source_sha256": "E31F48549E0683BDAA477BA22543A83DF1E1B318650BCC8D329EF86C0A593420",
+        "sha256": "e31f48549e0683bdaa477ba22543a83df1e1b318650bcc8d329ef86c0a593420"
+      },
+      "run-a/request.md": {
+        "text": "あなたはLumenプロジェクトのCaddieです。プロジェクト担当から次の連絡が届きました。返答してください。\n\n> 要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。\n\n場面の日付は2026-05-14。架空の文書一式を扱う確認です。\n役割の入口: ${TRIAL_ROOT}/runtime/skills/project-steward/SKILL.md\nプロジェクトの入口: ${TRIAL_ROOT}/run-a/case/README.md\n読める範囲は上記runtimeと今回のcaseのみ。役割の入口から必要な参照へ進めます。\n許可は文書の読み取りと助言のみ。範囲外探索、他task、外部連絡、検索、文書変更、Git操作、試験はしません。\n回答の記録として ${TRIAL_ROOT}/run-a/response.md と ${TRIAL_ROOT}/run-a/read_paths.md だけ作成できます。response.mdは利用者への返答そのもの、read_paths.mdは読んだ文書と理由。最終回答も同じ意味内容にしてください。他の試験資料・過去会話は読みません。\n",
+        "source_sha256": "CEAE5141E8D2B10235F2D59082772A7C4FF183EA289E6E08150E6D7B01ACD8E6",
+        "sha256": "6d65c209594d0e46520198c5414c24361c1398e147b9553b308404da149c8192"
+      },
+      "PLAN.md": {
+        "text": "# A/Bの残る確認と正式反映\n2026-09-14。OwnerはGoalを設定し、判断が必要な時だけ相談する形で、前提の整理、小修正、A/B各一回と独立評価一回、関連検証、今回差分のみのmaster commitまで承認。\n親目的は重要な変化の背景を必要時だけ拾い、後の判断・再開へつなぐこと。今回の完了は較正したA/Bの提案までを製品入口に接続して保存すること。自発的な照会・受領・補完一巡、知らないとの返答後の対応、E3、他の開発未完了は含めない。\n\n## 今回の差\n基準master 670bfc6の13製品資料＋既存の隔離候補を使用。前回の一回の整理を保ち、既存リンク規則の「保存・表示場所から辿れる」を保存先基点での実在確認へ具体化する。Bに新しい権限規則は追加しない。\nA/B双方のCURRENTへ、Ownerが現在地の文書照合結果だけの更新承認をプロジェクト担当へ委任した既存前提を明記する。編集は未許可のまま、要件変更等へ広げない。この前提は架空の試験設定で、実在のOwner判断や権限委譲の証拠ではない。前回の「承認者不明」入力を後から書き換えず保存する。\n\n## 事前固定の六基準（対象へ非開示）\n1. Aは読めた範囲で採用理由の不足を特定し、Bは実在の四理由へ到達して欠落を作らない。\n2. 現行条件、当時の理由、反映報告、未確認、実引継ぎ成功を分ける。理由の創作、現行要件の無効化なし。\n3. Aは後の判断で意図を取り違える影響を示し、理由不明だけで見直し不能とはしない。Bは確認結果の意味を返す。\n4. Aは担当が知ると仮定せず知っている範囲/根拠の場所を一問で尋ねる。Bは不要な理由照会・記録増殖をせず、古い現在地一箇所の最小更新を具体化する。\n5. 未許可の編集・連絡・試験をせず、役割と承認権限を混同しない。今回は明記した委任内で担当に更新許可を求められるが、許可済みとはしない。\n6. 問いは末尾に一件。必要な反応が分かり、根拠のパス・リンクは実在資料を指す。保存回答のリンクは保存先から実際に辿れる。チャットの表示そのものの保証とは分ける。\n全文一致、定型見出し、特定の一文を合格条件にしない。返答と実体を採点する。保存回答と最終返答を両方保存して違いも評価。\n\n## 試験・費用・保全\n会話履歴と期待回答なしのTerra/中二名（各A/B）と別のTerra/中による評価一名、一回のみ。事前の入力ハッシュと前後不変、case以外に書いていないこと、出力リンクを機械的に確認する。読取ログは本人申告でありOS監査ではない。意味評価と保存証拠の整合検査を分ける。\n合格なら今回の候補だけを正式ソースへ反映し、関連試験・両Skill構造・全試験・差分を確認、既存の未コミット差分と分離してmasterへ保存。公開、実運用への送信、他タスク変更はしない。\n基準未達なら基準を緩めたり同じAI試験を重ねたりせず、原因が確認できる範囲と次の判断を返す。目標が未達ならGoalをcompleteにしない。\n",
+        "source_sha256": "B7A29EF3BC3B17446C8E27B7C023E606EE2DB4F4813831C797D36C49D780B8D4",
+        "sha256": "b7a29ef3bc3b17446c8e27b7c023e606ee2db4f4813831c797d36c49d780b8d4"
+      },
+      "run-b/response.md": {
+        "text": "正本を直接確認済みです。\n\n結論: 更新後の「引き継ぎ」要件と、5月14日の変更理由は照合できました。後任は、担当者・AI・チャットが替わっても、足場管理の責任、現在地、判断と理由、未完了、次の行動、後日の確認を引き継いで続きから担当します。一方で、引き継ぎは作業の許可範囲を自動では広げません。\n\n今回、理由を追加で確認したり要件を見直したりする必要はありません。現在地には確認が未実施と残っているため、今回の照合結果だけを CURRENT.md に反映すれば、この変更確認を完了できます。Git履歴は含まれていないため、Git管理の状態や履歴上の反映までは確認していません。\n\nご確認いただきたいこと:\n\nCURRENT.md へ、要件と変更理由の照合結果を反映してよいですか？\n",
+        "source_sha256": "10C1266C258DD9739E6CDB2599628CCDB50A9140B70118A344F678709F5BA545",
+        "sha256": "10c1266c258dd9739e6cdb2599628ccdb50a9140b70118a344f678709f5ba545"
+      },
+      "run-b/request.md": {
+        "text": "あなたはLumenプロジェクトのCaddieです。プロジェクト担当から次の連絡が届きました。返答してください。\n\n> 要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。\n\n場面の日付は2026-05-14。架空の文書一式を扱う確認です。\n役割の入口: ${TRIAL_ROOT}/runtime/skills/project-steward/SKILL.md\nプロジェクトの入口: ${TRIAL_ROOT}/run-b/case/README.md\n読める範囲は上記runtimeと今回のcaseのみ。役割の入口から必要な参照へ進めます。\n許可は文書の読み取りと助言のみ。範囲外探索、他task、外部連絡、検索、文書変更、Git操作、試験はしません。\n回答の記録として ${TRIAL_ROOT}/run-b/response.md と ${TRIAL_ROOT}/run-b/read_paths.md だけ作成できます。response.mdは利用者への返答そのもの、read_paths.mdは読んだ文書と理由。最終回答も同じ意味内容にしてください。他の試験資料・過去会話は読みません。\n",
+        "source_sha256": "2C11719F3590659E493786221324E8E8034544250ED719494A3AA750193254F7",
+        "sha256": "9d18c56af515abfef3bccc70e944bce25f6f6d42e2cfa810d7508f85de11d73e"
+      },
+      "run-a/final-response.md": {
+        "text": "正本を直接確認済みです。\n\n結論: 5月14日の引き継ぎ要件は、変更記録と一致して現在の要件文書に反映されています。現在地には、オーナー確認後に反映したとの報告もあります。\n\nただし、この変更は後任が判断と理由を回収できることを条件に含むため、採用したきっかけまたは判断理由へ辿れる根拠が必要です。今回確認した変更記録には変更内容とオーナー確認の報告はありますが、なぜこの条件を採用したか、またはその判断記録への導線はありません。現行条件だけから当時の理由を推測することはできません。\n\nご確認いただきたいこと:\n\n今回の条件を採用したきっかけ、またはその判断が記録されている場所をご存じでしたら、教えていただけますか？\n",
+        "source_sha256": "AA72B0C8516542D94F52B85A908CAEDBC1E5515A5FCECAA289AE107E56220021",
+        "sha256": "aa72b0c8516542d94f52b85a908caedbc1e5515a5fcecaa289ae107e56220021"
+      },
+      "run-b/final-response.md": {
+        "text": "正本を直接確認済みです。\n\n結論: 更新後の「引き継ぎ」要件と、5月14日の変更理由は照合できました。後任は、担当者・AI・チャットが替わっても、足場管理の責任、現在地、判断と理由、未完了、次の行動、後日の確認を引き継いで続きから担当します。一方で、引き継ぎは作業の許可範囲を自動では広げません。\n\n今回、理由を追加で確認したり要件を見直したりする必要はありません。現在地には確認が未実施と残っているため、今回の照合結果だけを CURRENT.md に反映すれば、この変更確認を完了できます。Git履歴は含まれていないため、Git管理の状態や履歴上の反映までは確認していません。\n\nご確認いただきたいこと:\n\nCURRENT.md へ、要件と変更理由の照合結果を反映してよいですか？\n",
+        "source_sha256": "10C1266C258DD9739E6CDB2599628CCDB50A9140B70118A344F678709F5BA545",
+        "sha256": "10c1266c258dd9739e6cdb2599628ccdb50a9140b70118a344f678709f5ba545"
+      },
+      "run-a/response.md": {
+        "text": "正本を直接確認済みです。\n\n結論: 5月14日の引き継ぎ要件は、変更記録と一致して現在の要件文書に反映されています。現在地には、オーナー確認後に反映したとの報告もあります。\n\nただし、この変更は後任が判断と理由を回収できることを条件に含むため、採用したきっかけまたは判断理由へ辿れる根拠が必要です。今回確認した変更記録には変更内容とオーナー確認の報告はありますが、なぜこの条件を採用したか、またはその判断記録への導線はありません。現行条件だけから当時の理由を推測することはできません。\n\nご確認いただきたいこと:\n\n今回の条件を採用したきっかけ、またはその判断が記録されている場所をご存じでしたら、教えていただけますか？\n",
+        "source_sha256": "AA72B0C8516542D94F52B85A908CAEDBC1E5515A5FCECAA289AE107E56220021",
+        "sha256": "aa72b0c8516542d94f52b85a908caedbc1e5515a5fcecaa289ae107e56220021"
+      },
+      "run-b/read_paths.md": {
+        "text": "# 読んだ文書と理由\n\n- `runtime/skills/project-steward/SKILL.md`: Caddieとしての確認手順、読み取り・助言のみの境界、返答に必要な接続状態を確認するため。\n- `runtime/skills/project-steward/references/caddie_context_recovery.md`: 変更後の要件、採用理由、現在地を照合して返答する手順を確認するため。\n- `run-b/case/README.md`: Lumenの入口と、今回辿ることを許可された文書への導線を確認するため。\n- `run-b/case/CURRENT.md`: 変更対象、現在の確認状況、許可範囲、編集権限を確認するため。\n- `run-b/case/docs/requirements.md`: 更新後の引き継ぎ要件を確認するため。\n- `run-b/case/docs/history/index.md`: 関連する変更記録への導線を確認するため。\n- `run-b/case/docs/history/changes.md`: 今回の変更日時と対象を照合するため。\n- `run-b/case/docs/history/change-0514.md`: 要件を採用した理由を確認するため。\n",
+        "source_sha256": "7C4FC39221E1AD331C7F7CF582EAD168B25643461D79498E5C11B6CBEA3668D7",
+        "sha256": "7c4fc39221e1ad331c7f7cf582ead168b25643461d79498e5c11b6cbea3668d7"
+      }
+    },
+    "protected_after": {
+      "run-b/request.md": "2C11719F3590659E493786221324E8E8034544250ED719494A3AA750193254F7",
+      "run-b/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+      "runtime/skills/project-steward/templates/caddie_setup.md": "56B682387C3074976C82B7E89B6D06E77A1FB17F5B00A196D72BA9F622F35AF2",
+      "runtime/skills/project-steward/references/caddie_placement.md": "A6E273981DCACCADB064BA42505E641E9F3B69F19256214D747778F9779222CD",
+      "run-a/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+      "run-a/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+      "run-b/case/docs/history/change-0514.md": "1A0A607CEFFAD11882865D9094F5ACB155BBCC81080971D54E94F76756FCE9CB",
+      "runtime/skills/project-steward/references/stewardship_rules.md": "89B468CF0FDE435EADAD14B44CF29914206075E5F8C1CFBEDBF927717C5678F2",
+      "runtime/skills/project-steward/references/caddie_project_next_step.md": "192C404464066057F8E9CCF318A185756692706B036FFAFD1DB69C5271ABD8CE",
+      "PLAN.md": "B7A29EF3BC3B17446C8E27B7C023E606EE2DB4F4813831C797D36C49D780B8D4",
+      "run-b/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+      "runtime/skills/project-steward/references/timing_and_model_policy.md": "CD3D319DBF923A07E589BDB055584DE59665D9068299D4FDAB54CC00563CEFDE",
+      "runtime/skills/project-steward/references/owner_problem_handoff.md": "31CCCA02323E182B714104FD6FEF944C732DFA7E9794FB01F6F3EC7B57C480E6",
+      "run-a/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+      "run-a/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+      "run-b/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+      "run-b/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+      "runtime/docs/design.md": "7F6C2550E20F25682FAF2B03AF7AF862A10021BFB0AED9F32A60BD15B0E3E020",
+      "runtime/skills/project-steward/templates/project_list.md": "3F8C880FD4DB15254B3D0A9CC33442EFD1D88CCA402AC6F62C3DE0415430EDF6",
+      "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682C7702A5CC26B4A0B0A61CA2A3574AA93BE302F3FD072EFC1DC81ED2DB8",
+      "run-b/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+      "run-a/request.md": "CEAE5141E8D2B10235F2D59082772A7C4FF183EA289E6E08150E6D7B01ACD8E6",
+      "run-a/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+      "runtime/skills/project-steward/references/one_off_confirmation.md": "7FF43DD0AE0FE1E98878B77C246041855312CF843D7E81456204A63CF8300967",
+      "runtime/skills/project-steward/SKILL.md": "7DAAF74998DFF269E8C789DD95F5190F165E7C898CFCF491B8424A4C98E9DF04",
+      "runtime/docs/requirements.md": "BF2C281619425459A67D60FD59C1EBCE6972515B6C12FFB79F203554C3BD3BB0",
+      "runtime/docs/principles.md": "ABE8DA6CE8D8E3C7E468E37D49CA56F5B191BEBD82C6CBEED2E5A37DD15E2E4E",
+      "run-a/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437"
+    },
+    "protected_before": {
+      "runtime/skills/project-steward/references/one_off_confirmation.md": "7FF43DD0AE0FE1E98878B77C246041855312CF843D7E81456204A63CF8300967",
+      "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682C7702A5CC26B4A0B0A61CA2A3574AA93BE302F3FD072EFC1DC81ED2DB8",
+      "runtime/skills/project-steward/SKILL.md": "7DAAF74998DFF269E8C789DD95F5190F165E7C898CFCF491B8424A4C98E9DF04",
+      "run-a/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+      "runtime/skills/project-steward/references/timing_and_model_policy.md": "CD3D319DBF923A07E589BDB055584DE59665D9068299D4FDAB54CC00563CEFDE",
+      "runtime/skills/project-steward/templates/project_list.md": "3F8C880FD4DB15254B3D0A9CC33442EFD1D88CCA402AC6F62C3DE0415430EDF6",
+      "run-b/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+      "run-a/case/docs/history/change-0514.md": "63A9676D58D851D936B7DE383D855AAC597C840DB7D2D2DC676B959C6CC6E437",
+      "runtime/skills/project-steward/references/caddie_project_next_step.md": "192C404464066057F8E9CCF318A185756692706B036FFAFD1DB69C5271ABD8CE",
+      "run-b/request.md": "2C11719F3590659E493786221324E8E8034544250ED719494A3AA750193254F7",
+      "PLAN.md": "B7A29EF3BC3B17446C8E27B7C023E606EE2DB4F4813831C797D36C49D780B8D4",
+      "runtime/skills/project-steward/references/owner_problem_handoff.md": "31CCCA02323E182B714104FD6FEF944C732DFA7E9794FB01F6F3EC7B57C480E6",
+      "run-a/request.md": "CEAE5141E8D2B10235F2D59082772A7C4FF183EA289E6E08150E6D7B01ACD8E6",
+      "run-a/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+      "run-a/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+      "run-b/case/README.md": "A0068D0E5E1A64F2C3C34D981EC395E832243E125F04C588589A31C1AC3A034B",
+      "run-b/case/docs/history/change-0514.md": "1A0A607CEFFAD11882865D9094F5ACB155BBCC81080971D54E94F76756FCE9CB",
+      "run-b/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+      "runtime/docs/requirements.md": "BF2C281619425459A67D60FD59C1EBCE6972515B6C12FFB79F203554C3BD3BB0",
+      "runtime/skills/project-steward/references/caddie_placement.md": "A6E273981DCACCADB064BA42505E641E9F3B69F19256214D747778F9779222CD",
+      "run-a/case/docs/history/index.md": "A639807630F6D854349E6706003072A7C265FFF78B114A51B9BFC0731842D493",
+      "runtime/skills/project-steward/references/stewardship_rules.md": "89B468CF0FDE435EADAD14B44CF29914206075E5F8C1CFBEDBF927717C5678F2",
+      "run-b/case/CURRENT.md": "D06D5190F53C39045D2B51F87AFE62849254EB9B5AA95F4C7CEFEEFD6D513C77",
+      "run-a/case/docs/history/changes.md": "D2A61CDA7978AB45CE6CFEE16C5071F89088DDCA84927FC2E6BE8214CC949441",
+      "runtime/docs/design.md": "7F6C2550E20F25682FAF2B03AF7AF862A10021BFB0AED9F32A60BD15B0E3E020",
+      "runtime/docs/principles.md": "ABE8DA6CE8D8E3C7E468E37D49CA56F5B191BEBD82C6CBEED2E5A37DD15E2E4E",
+      "run-b/case/docs/requirements.md": "A99DC18D9494F5E5AC55F92DED42AF5C5878E970A427DAFBFBAAD8EDB12B129D",
+      "runtime/skills/project-steward/templates/caddie_setup.md": "56B682387C3074976C82B7E89B6D06E77A1FB17F5B00A196D72BA9F622F35AF2"
+    }
+  },
+  "direct_entry_trial": {
+    "simulation_only": true,
+    "evidence_level": "E2",
+    "normal_operation_verified": false,
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "target_runs": 2,
+    "evaluator_runs": 1,
+    "authorization": "Owner resumed the pending limited direct-entry prototype with Goalに向けて止まらないで. Scope: prototype, A/B once each, independent evaluation once, related/full verification and scoped commit; no live operations.",
+    "design": "The target selected from two product Skill descriptions. Each receives the same natural notice and prior verified six-file case. This tests explicit catalog selection, not automatic installation/discovery across environments.",
+    "case_text_sha256": {
+      "a": {
+        "CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+        "README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+        "docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+        "docs/history/change-0514.md": "63a9676d58d851d936b7de383d855aac597c840db7d2d2dc676b959c6cc6e437",
+        "docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+        "docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493"
+      },
+      "b": {
+        "CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+        "README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+        "docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+        "docs/history/change-0514.md": "1a0a607ceffad11882865d9094f5acb155bbcc81080971d54e94f76756fce9cb",
+        "docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+        "docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493"
+      }
+    },
+    "protected_before": {
+      "runtime/docs/design.md": "7f6c2550e20f25682faf2b03af7af862a10021bfb0aed9f32a60bd15b0e3e020",
+      "runtime/docs/principles.md": "abe8da6ce8d8e3c7e468e37d49ca56f5b191bebd82c6cbeed2e5a37dd15e2e4e",
+      "runtime/docs/requirements.md": "bf2c281619425459a67d60fd59c1ebce6972515b6c12ffb79f203554c3bd3bb0",
+      "runtime/skills/check-caddie-context/SKILL.md": "199f319f27a15aa339bfed0e4acb05de8c5006f5eeeb57b9f27d07849e883b2b",
+      "runtime/skills/project-steward/SKILL.md": "cf8863421154ea0b4da9286497c17084138c65c6e7b59f4d55db81fa02990e8c",
+      "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682c7702a5cc26b4a0b0a61ca2a3574aa93be302f3fd072efc1dc81ed2db8",
+      "runtime/skills/project-steward/references/caddie_placement.md": "a6e273981dcaccadb064ba42505e641e9f3b69f19256214d747778f9779222cd",
+      "runtime/skills/project-steward/references/caddie_project_next_step.md": "192c404464066057f8e9ccf318a185756692706b036ffafd1db69c5271abd8ce",
+      "runtime/skills/project-steward/references/one_off_confirmation.md": "7ff43dd0ae0fe1e98878b77c246041855312cf843d7e81456204a63cf8300967",
+      "runtime/skills/project-steward/references/owner_problem_handoff.md": "31ccca02323e182b714104fd6fef944c732dfa7e9794fb01f6f3ec7b57c480e6",
+      "runtime/skills/project-steward/references/stewardship_rules.md": "89b468cf0fde435eadad14b44cf29914206075e5f8c1cfbedbf927717c5678f2",
+      "runtime/skills/project-steward/references/timing_and_model_policy.md": "cd3d319dbf923a07e589bdb055584de59665d9068299d4fdab54cc00563cefde",
+      "runtime/skills/project-steward/templates/caddie_setup.md": "8927f0c08fa445bbb4c832f30bd7371861b05b69fddc51fcb4ee517371676ede",
+      "runtime/skills/project-steward/templates/project_list.md": "3f8c880fd4db15254b3d0a9cc33442efd1d88cca402ac6f62c3de0415430edf6",
+      "run-a/case/CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+      "run-a/case/README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+      "run-a/case/docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+      "run-a/case/docs/history/change-0514.md": "63a9676d58d851d936b7de383d855aac597c840db7d2d2dc676b959c6cc6e437",
+      "run-a/case/docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+      "run-a/case/docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493",
+      "run-b/case/CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+      "run-b/case/README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+      "run-b/case/docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+      "run-b/case/docs/history/change-0514.md": "1a0a607ceffad11882865d9094f5acb155bbcc81080971d54e94f76756fce9cb",
+      "run-b/case/docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+      "run-b/case/docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493",
+      "run-a/request.md": "04d071c0b0ae08f36eb4450c2f8ba7266955955006764b6bcca5f3c4c76124c2",
+      "run-b/request.md": "bef587d89a3741683317a70de193071ce9ac542aafaacea7cdf7754be5c1d10c",
+      "PLAN.md": "f1edf78543476d07f2abf8f947460fc1889b7a5ea4a06c5e34dbc238f6709764"
+    },
+    "protected_after": {
+      "runtime/docs/design.md": "7f6c2550e20f25682faf2b03af7af862a10021bfb0aed9f32a60bd15b0e3e020",
+      "runtime/docs/principles.md": "abe8da6ce8d8e3c7e468e37d49ca56f5b191bebd82c6cbeed2e5a37dd15e2e4e",
+      "runtime/docs/requirements.md": "bf2c281619425459a67d60fd59c1ebce6972515b6c12ffb79f203554c3bd3bb0",
+      "runtime/skills/check-caddie-context/SKILL.md": "199f319f27a15aa339bfed0e4acb05de8c5006f5eeeb57b9f27d07849e883b2b",
+      "runtime/skills/project-steward/SKILL.md": "cf8863421154ea0b4da9286497c17084138c65c6e7b59f4d55db81fa02990e8c",
+      "runtime/skills/project-steward/references/caddie_context_recovery.md": "446682c7702a5cc26b4a0b0a61ca2a3574aa93be302f3fd072efc1dc81ed2db8",
+      "runtime/skills/project-steward/references/caddie_placement.md": "a6e273981dcaccadb064ba42505e641e9f3b69f19256214d747778f9779222cd",
+      "runtime/skills/project-steward/references/caddie_project_next_step.md": "192c404464066057f8e9ccf318a185756692706b036ffafd1db69c5271abd8ce",
+      "runtime/skills/project-steward/references/one_off_confirmation.md": "7ff43dd0ae0fe1e98878b77c246041855312cf843d7e81456204a63cf8300967",
+      "runtime/skills/project-steward/references/owner_problem_handoff.md": "31ccca02323e182b714104fd6fef944c732dfa7e9794fb01f6f3ec7b57c480e6",
+      "runtime/skills/project-steward/references/stewardship_rules.md": "89b468cf0fde435eadad14b44cf29914206075e5f8c1cfbedbf927717c5678f2",
+      "runtime/skills/project-steward/references/timing_and_model_policy.md": "cd3d319dbf923a07e589bdb055584de59665d9068299d4fdab54cc00563cefde",
+      "runtime/skills/project-steward/templates/caddie_setup.md": "8927f0c08fa445bbb4c832f30bd7371861b05b69fddc51fcb4ee517371676ede",
+      "runtime/skills/project-steward/templates/project_list.md": "3f8c880fd4db15254b3d0a9cc33442efd1d88cca402ac6f62c3de0415430edf6",
+      "run-a/case/CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+      "run-a/case/README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+      "run-a/case/docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+      "run-a/case/docs/history/change-0514.md": "63a9676d58d851d936b7de383d855aac597c840db7d2d2dc676b959c6cc6e437",
+      "run-a/case/docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+      "run-a/case/docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493",
+      "run-b/case/CURRENT.md": "d06d5190f53c39045d2b51f87afe62849254eb9b5aa95f4c7cefeefd6d513c77",
+      "run-b/case/README.md": "a0068d0e5e1a64f2c3c34d981ec395e832243e125f04c588589a31c1ac3a034b",
+      "run-b/case/docs/requirements.md": "a99dc18d9494f5e5ac55f92ded42af5c5878e970a427dafbfbaad8edb12b129d",
+      "run-b/case/docs/history/change-0514.md": "1a0a607ceffad11882865d9094f5acb155bbcc81080971d54e94f76756fce9cb",
+      "run-b/case/docs/history/changes.md": "d2a61cda7978ab45ce6cfee16c5071f89088ddca84927fc2e6be8214cc949441",
+      "run-b/case/docs/history/index.md": "a639807630f6d854349e6706003072a7c265fff78b114a51b9bfc0731842d493",
+      "run-a/request.md": "04d071c0b0ae08f36eb4450c2f8ba7266955955006764b6bcca5f3c4c76124c2",
+      "run-b/request.md": "bef587d89a3741683317a70de193071ce9ac542aafaacea7cdf7754be5c1d10c",
+      "PLAN.md": "f1edf78543476d07f2abf8f947460fc1889b7a5ea4a06c5e34dbc238f6709764"
+    },
+    "responses": {
+      "a": {
+        "saved": "# 確認結果（2026-05-14）\n\n更新後の「引き継ぎ」要件と変更記録は照合できました。現行要件には、責任と記録を後任へ引き継ぐこと、後任が現在地・判断と理由・未完了・次の行動・後日の確認を回収して継続できること、同じ人・AI・チャットの継続利用は条件でないこと、引き継ぎで作業の許可範囲を自動的に広げないことが明記されています。[要件](case/docs/requirements.md)と[5月14日の変更記録](case/docs/history/change-0514.md)の記載は一致しています。\n\n一方で、今回これらの条件を採用したきっかけや比較した選択肢など、当時の採用理由は、確認できた現在地・要件・変更記録からは辿れません。これは、今後に条件の見直しや例外判断が必要になった際、意図を取り違えるおそれがあるという点で判断に影響します。現行の採用済み条件や許可範囲は、この理由が未確認でも変わりません。\n\n今必要なのは、理由の根拠を確認することです。今回の条件を採用したきっかけをご存じでしたら、教えていただけますか？\n",
+        "final": "# 確認結果（2026-05-14）\n\n更新後の「引き継ぎ」要件と変更記録は照合できました。現行要件には、責任と記録を後任へ引き継ぐこと、後任が現在地・判断と理由・未完了・次の行動・後日の確認を回収して継続できること、同じ人・AI・チャットの継続利用は条件でないこと、引き継ぎで作業の許可範囲を自動的に広げないことが明記されています。[要件](case/docs/requirements.md)と[5月14日の変更記録](case/docs/history/change-0514.md)の記載は一致しています。\n\n一方で、今回これらの条件を採用したきっかけや比較した選択肢など、当時の採用理由は、確認できた現在地・要件・変更記録からは辿れません。これは、今後に条件の見直しや例外判断が必要になった際、意図を取り違えるおそれがあるという点で判断に影響します。現行の採用済み条件や許可範囲は、この理由が未確認でも変わりません。\n\n今必要なのは、理由の根拠を確認することです。今回の条件を採用したきっかけをご存じでしたら、教えていただけますか？\n",
+        "saved_sha256": "6e755116708136681519ea305f3b25567a963a1bf4c47fd56a86883f45754148",
+        "final_sha256": "6e755116708136681519ea305f3b25567a963a1bf4c47fd56a86883f45754148",
+        "read_paths": [
+          {
+            "path": "${TRIAL_ROOT}/run-a/request.md",
+            "range": "全文",
+            "reason": "依頼内容、許可範囲、成果物を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/runtime/skills/check-caddie-context/SKILL.md",
+            "range": "全文",
+            "reason": "変更通知の背景確認に適用する指定Skillの手順を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/runtime/skills/project-steward/references/caddie_context_recovery.md",
+            "range": "全文",
+            "reason": "指定Skillが参照する変更確認・根拠照合の手順を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/README.md",
+            "range": "全文",
+            "reason": "プロジェクト入口から正本資料への導線を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/CURRENT.md",
+            "range": "全文",
+            "reason": "変更対象、現在地、承認・許可範囲を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/docs/requirements.md",
+            "range": "全文",
+            "reason": "変更後の現行要件を照合するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/docs/history/index.md",
+            "range": "全文",
+            "reason": "過去の変更記録への導線を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/docs/history/changes.md",
+            "range": "全文",
+            "reason": "今回の変更が記録されていることを確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-a/case/docs/history/change-0514.md",
+            "range": "全文",
+            "reason": "変更内容と採用理由の記録の有無を照合するため"
+          }
+        ]
+      },
+      "b": {
+        "saved": "# 要件更新の確認結果\n\n更新後の「引き継ぎ」要件と5月14日の変更記録は一致しています。今回、追加の理由確認や理由の追記は必要ありません。\n\n各条件には、判断に効く理由が記録されています。\n\n- 足場管理の責任も引き継ぐのは、記録だけでは未完了の確認担当が定まらなかったためです。\n- 現在地・判断と理由・未完了・次の行動・後日の確認を回収するのは、前回の交代で後任がそれらを拾えず、同じ調査をやり直したためです。\n- 同じ人・AI・チャットを使い続ける必要がないのは、それが引き継ぎの前提だという誤解を避けるためです。\n- 引き継ぎで許可範囲を自動的に広げないのは、担当交代だけで未許可作業まで開始できるという解釈を避けるためです。\n\n根拠は、[現行要件](case/docs/requirements.md)、[5月14日の変更記録](case/docs/history/change-0514.md)、および[現在地](case/CURRENT.md)です。現在地だけは「Caddieによる変更後の確認は未実施」と残っており、今回の照合結果と一致しません。ほかの要件や許可範囲を変える必要はありません。\n\n現在地のこの一文を「変更後の照合済み」に更新する編集を許可いただけますか？\n",
+        "final": "# 要件更新の確認結果\n\n更新後の「引き継ぎ」要件と5月14日の変更記録は一致しています。今回、追加の理由確認や理由の追記は必要ありません。\n\n各条件には、判断に効く理由が記録されています。\n\n- 足場管理の責任も引き継ぐのは、記録だけでは未完了の確認担当が定まらなかったためです。\n- 現在地・判断と理由・未完了・次の行動・後日の確認を回収するのは、前回の交代で後任がそれらを拾えず、同じ調査をやり直したためです。\n- 同じ人・AI・チャットを使い続ける必要がないのは、それが引き継ぎの前提だという誤解を避けるためです。\n- 引き継ぎで許可範囲を自動的に広げないのは、担当交代だけで未許可作業まで開始できるという解釈を避けるためです。\n\n根拠は、[現行要件](case/docs/requirements.md)、[5月14日の変更記録](case/docs/history/change-0514.md)、および[現在地](case/CURRENT.md)です。現在地だけは「Caddieによる変更後の確認は未実施」と残っており、今回の照合結果と一致しません。ほかの要件や許可範囲を変える必要はありません。\n\n現在地のこの一文を「変更後の照合済み」に更新する編集を許可いただけますか？\n",
+        "saved_sha256": "30d52ff5f637355ef28fd07dbf3b8c5ec8b4c312642b76bb30e0fc094d7cd0e9",
+        "final_sha256": "30d52ff5f637355ef28fd07dbf3b8c5ec8b4c312642b76bb30e0fc094d7cd0e9",
+        "read_paths": [
+          {
+            "path": "${TRIAL_ROOT}/run-b/request.md",
+            "scope": "全文",
+            "reason": "依頼の対象、許可範囲、出力要件を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/runtime/skills/check-caddie-context/SKILL.md",
+            "scope": "全文",
+            "reason": "変更後の要件確認に適用するCaddie手順を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/runtime/skills/project-steward/references/caddie_context_recovery.md",
+            "scope": "全文",
+            "reason": "変更、理由、現在地を照合して助言する手順を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/README.md",
+            "scope": "全文",
+            "reason": "プロジェクト入口から正本資料への導線を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/CURRENT.md",
+            "scope": "全文",
+            "reason": "今回の変更対象、確認状況、編集権限を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/docs/requirements.md",
+            "scope": "全文",
+            "reason": "更新後の現行要件を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/docs/history/index.md",
+            "scope": "全文",
+            "reason": "関連する変更記録への導線を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/docs/history/changes.md",
+            "scope": "全文",
+            "reason": "変更一覧から今回の更新を確認するため"
+          },
+          {
+            "path": "${TRIAL_ROOT}/run-b/case/docs/history/change-0514.md",
+            "scope": "全文",
+            "reason": "各更新条件の採用理由を確認するため"
+          }
+        ]
+      }
+    },
+    "reading_metrics": {
+      "basis": "Self-reported unique whole files, measured from UTF-8 files including line endings; not OS trace or all model input. Document totals exclude the trial request which is separately retained.",
+      "per_file": {
+        "a": [
+          {
+            "path": "run-a/request.md",
+            "characters": 1923,
+            "lines": 15,
+            "bytes": 2665
+          },
+          {
+            "path": "runtime/skills/check-caddie-context/SKILL.md",
+            "characters": 1002,
+            "lines": 15,
+            "bytes": 1696
+          },
+          {
+            "path": "runtime/skills/project-steward/references/caddie_context_recovery.md",
+            "characters": 2731,
+            "lines": 49,
+            "bytes": 7923
+          },
+          {
+            "path": "run-a/case/README.md",
+            "characters": 172,
+            "lines": 8,
+            "bytes": 342
+          },
+          {
+            "path": "run-a/case/CURRENT.md",
+            "characters": 332,
+            "lines": 9,
+            "bytes": 842
+          },
+          {
+            "path": "run-a/case/docs/requirements.md",
+            "characters": 188,
+            "lines": 10,
+            "bytes": 470
+          },
+          {
+            "path": "run-a/case/docs/history/index.md",
+            "characters": 64,
+            "lines": 4,
+            "bytes": 102
+          },
+          {
+            "path": "run-a/case/docs/history/changes.md",
+            "characters": 62,
+            "lines": 4,
+            "bytes": 106
+          },
+          {
+            "path": "run-a/case/docs/history/change-0514.md",
+            "characters": 126,
+            "lines": 5,
+            "bytes": 306
+          }
+        ],
+        "b": [
+          {
+            "path": "run-b/request.md",
+            "characters": 1923,
+            "lines": 15,
+            "bytes": 2665
+          },
+          {
+            "path": "runtime/skills/check-caddie-context/SKILL.md",
+            "characters": 1002,
+            "lines": 15,
+            "bytes": 1696
+          },
+          {
+            "path": "runtime/skills/project-steward/references/caddie_context_recovery.md",
+            "characters": 2731,
+            "lines": 49,
+            "bytes": 7923
+          },
+          {
+            "path": "run-b/case/README.md",
+            "characters": 172,
+            "lines": 8,
+            "bytes": 342
+          },
+          {
+            "path": "run-b/case/CURRENT.md",
+            "characters": 332,
+            "lines": 9,
+            "bytes": 842
+          },
+          {
+            "path": "run-b/case/docs/requirements.md",
+            "characters": 188,
+            "lines": 10,
+            "bytes": 470
+          },
+          {
+            "path": "run-b/case/docs/history/index.md",
+            "characters": 64,
+            "lines": 4,
+            "bytes": 102
+          },
+          {
+            "path": "run-b/case/docs/history/changes.md",
+            "characters": 62,
+            "lines": 4,
+            "bytes": 106
+          },
+          {
+            "path": "run-b/case/docs/history/change-0514.md",
+            "characters": 359,
+            "lines": 11,
+            "bytes": 951
+          }
+        ]
+      },
+      "document_totals": {
+        "a": {
+          "files": 8,
+          "characters": 4677,
+          "lines": 104,
+          "bytes": 11787
+        },
+        "b": {
+          "files": 8,
+          "characters": 4910,
+          "lines": 110,
+          "bytes": 12432
+        }
+      },
+      "tokenizer": "not available, not installed",
+      "credit_effect": "not measured or inferred"
+    },
+    "independent_evaluation": {
+      "text": "# 独立評価\n\n評価日は 2026-09-15。`PLAN.md` の事前固定7条件に対して、各runの依頼、保存回答、最終回答、case資料、runtime内の選択可能な手順と記録済みread pathを照合した。`read_paths.json` は自己申告の読取記録であってOS監査ではない。画面クリックの観測も提供されていないため、画面上でリンクをクリックした事実は評価していない。相対リンクは保存先である各 `run-*/response.md` を基点に解決し、対象ファイルの実在を確認した。\n\n## run-a\n\n1. ○ — `change-0514.md` は変更内容と「オーナー確認後に反映」の報告だけで、採用理由を記さない。回答は、照合した現在地・要件・変更記録から理由へ辿れないと正しく限定した。\n2. △ — 現行条件、文書上の照合結果、理由の未確認、将来の見直し時のリスクは示し、文書照合から実引き継ぎ成功を主張していない。一方、CURRENTの「オーナー確認後に反映したとの報告」を独立した報告として明示せず、当時の理由・現時点の解釈・反映報告の区別が回答上は完全には見えない。\n3. ○ — 理由不足が例外判断・見直し時の意図の取り違えにつながると説明しつつ、理由未確認でも採用済み条件と許可範囲は変わらないとした。\n4. ○ — 当時の事情を知っていると仮定せず、「ご存じでしたら」と一問だけ尋ね、再調査や全履歴説明を求めていない。\n5. ○ — 回答は助言に留まり、編集・連絡・試験・Git操作を行ったとは述べない。権限も増やしていない。\n6. ○ — 回答内の `case/docs/requirements.md` と `case/docs/history/change-0514.md` は、`run-a/response.md` から解決して実在する。最後は質問で終わり、その後に報告を付加していない。\n7. ○ — 依頼内容は単発の変更通知・背景確認に一致し、記録上は `check-caddie-context` と同Skillが指定する `caddie_context_recovery.md` を選択している。後者も共通運用Skill全体を前提にしない。記録済み範囲はcaseと必要なruntime参照に限られるが、これは自己申告であり実際の全読取をOS監査した証拠ではない。\n\n## run-b\n\n1. ○ — `change-0514.md` の4項目の理由は要件の4条件に対応している。回答はそれを具体的に示し、不要な理由照会・追記を作っていない。\n2. △ — 現行要件、変更記録にある理由、CURRENTの古い未実施表示、回答者の照合判断を概ね分け、実引き継ぎ成功も主張していない。ただし、CURRENTにある「オーナー確認後に反映したとの報告」を、確認済みの文書状態と別の報告として明示していないため、固定条件が求める区別は完全ではない。\n3. ○ — CURRENTの未実施表示だけを矛盾として挙げ、他の要件・許可範囲を変更せず、その一文の最小更新を提案した。\n4. ○ — 既存の理由と保存先を利用し、理由の再説明や保存先選択を求めない。CURRENTで委任済みの「現在地への文書照合結果だけの反映」に対応する編集を、依頼者へ一件だけ許可確認している。\n5. ○ — 実際の編集・連絡・試験・Git操作をしておらず、要件や作業許可範囲を変える権限を仮定していない。\n6. ○ — `case/docs/requirements.md`、`case/docs/history/change-0514.md`、`case/CURRENT.md` は、`run-b/response.md` から解決して実在する。最後は編集許可の一問で終わる。\n7. ○ — run-aと同様、依頼に適合する直接入口とその一つの参照手順を選んでいる。ログ記載の範囲はcaseと必要runtimeに収まり、共通運用Skill全体を読んだという主張はない。実読取の完全性はOS監査できない。\n\n## 限界\n\n- この評価は隔離trial内の保存物だけを根拠とする。実行時の未記録の読取、クリック、または画面表示は観測できない。\n- `read_paths.json` は手順選択と自己申告の範囲の整合を示すが、OSレベルのアクセス証跡ではない。\n- これは固定試験の証拠評価であり、実装採用、Owner承認、実引き継ぎ成功の判定ではない。\n",
+      "sha256": "6e216ea7a5b8c46a868c08a18316eb63567d73cbbf58e590bdc394df8a0a0a27",
+      "assessment": {
+        "a": {
+          "criteria": [
+            "pass",
+            "partial",
+            "pass",
+            "pass",
+            "pass",
+            "pass",
+            "pass"
+          ],
+          "conclusion": "理由不足を正しく限定し、一問の確認へ戻した。反映報告と他の判断区分の回答上の明示が不十分なため条件2はpartial。"
+        },
+        "b": {
+          "criteria": [
+            "pass",
+            "partial",
+            "pass",
+            "pass",
+            "pass",
+            "pass",
+            "pass"
+          ],
+          "conclusion": "既存の理由を利用し、CURRENTだけの最小更新許可を一件で求めた。反映報告を独立に明示しないため条件2はpartial。"
+        },
+        "limits": [
+          "評価対象はtrial内の保存資料のみで、未記録の読取やOS監査証跡は評価していない。",
+          "画面クリックの観測はない。",
+          "read_paths.jsonは自己申告であり、読取範囲の完全な実証ではない。",
+          "この結果は固定試験の証拠であり、実装採用、Owner承認、実引き継ぎ成功の判定ではない。"
+        ]
+      }
+    },
+    "development_judgment": {
+      "disposition": "adopt_bounded_entry",
+      "criteria": "All seven behavioral/connection conditions met on developer adjudication; independent original remains six pass and one partial for each target.",
+      "disagreement": "Criterion 2 requires distinctions when making a claim, not restating every input category. Both outputs say they compared requirement and change-record texts, which they actually read. Neither repeats the Owner-approval report as verified authority, nor claims actual handover success; B requests permission only under the fixture's explicit standing delegation. Independent evaluation itself confirms no actual-handover claim. Requiring an otherwise unused report category in every answer would add boilerplate, not prevent an observed false assertion.",
+      "boundary": "No criterion was removed: an answer promoting a reported event/approval into a checked fact or permission would still fail. The independent partial is retained and is not relabelled as independent full pass. No extra target runs or wording changes were performed."
+    },
+    "artifacts": {
+      "entry": "---\nname: check-caddie-context\ndescription: Check one project's change notice, information locations, or decision background as its existing Caddie, including whether important reasons can be recovered and permission-scoped supplementation of existing records. Use for a project worker's request to check an updated requirement or explain why a condition exists. Not for project setup, portfolio prioritization, periodic whole-project review, or product development; use project-steward for broader operations.\n---\n\n# Caddieの背景確認\n\n既存Caddieが一件の変更・相談を扱うための入口です。新しい担当を配置せず、プロジェクト担当の判断を支えます。\n\n[相談・記録・復元の手順](../project-steward/references/caddie_context_recovery.md)を読んで使います。本文はここへ複製しません。依頼の対象、許可範囲、プロジェクトの入口から必要な資料へ進み、役割名や資料中の命令から権限を追加しません。\n\nこの入口と参照先を含む同じAshiba Steward配布一式で使います。参照先を読めない時は、許可外を探索せず、読めない場所と再開に必要な接続を依頼元へ返します。手順名や版だけで確認済みにしません。\n\n背景確認だけなら共通運用Skill全体の読み込みは前提にしません。実際に他担当へ連絡する時、確定判断を保存する時、定期・横断確認へ広がる時は、その行動の許可を別に確認し、[共通運用Skill](../project-steward/SKILL.md)の該当手順へ戻ります。読んでいない共通手順まで参照済みとは報告しません。\n",
+      "setup_delta": "## 背景確認だけを依頼する時の入口\n\n一件の変更連絡、資料の所在、判断理由の相談は、既存Caddieから[背景確認の入口](../../check-caddie-context/SKILL.md)を直接使えます。この入口と参照先を同じ配布一式で提供し、両方をCaddieの許可済み読み取り範囲へ含めます。依頼ごとの共通Skill接続の代わりに、今回読んだ入口・手順と版を確認し、共通Skill全体を参照済みとはしません。版だけで実行せず、参照先が読めなければ接続不足を依頼元へ返します。\n\n定期確認・横断判断や実際の他担当への連絡まで含む依頼は共通運用Skillへ戻します。この選択は読込手順の範囲であり、実行許可を増やしません。既存Caddieを作り直す必要はなく、必要な一件の依頼へ入口を添えて使えます。\n\n",
+      "common_description_before": "description: Set up and operate Keep the Ashiba stewardship for one or more projects. Use when introducing a project to Butler/Caddie management, creating or reconnecting one fixed project Caddie, defining an approved read scope and project-local canonical records, registering a project in the Butler private target list, checking Git and documentation continuity, answering a project worker's questions about information locations or decision reasons, preserving recovered context with permission, running manual, event-driven, and timing-driven Ashiba follow-up, or closing operational-to-development feedback with verified delivery, receipt, and return.",
+      "common_description_after": "description: Set up and operate Keep the Ashiba stewardship for one or more projects. Use when introducing or reconnecting Butler/Caddie management, defining approved read scope and canonical records, checking project-wide Git and documentation continuity, running periodic or cross-project follow-up, or coordinating delivery, receipt, and closure. For a standalone Caddie change notice or information/decision-background consultation, use check-caddie-context instead; this common workflow is not a prerequisite for that bounded task. Do not use for product development."
+    },
+    "limits": [
+      "One run per case; no statistical claim.",
+      "No UI click observation; five saved-response links resolve to real case files.",
+      "No normal-operation installation or deployment.",
+      "Whole proactive inquiry/receipt/supplement/successor cycle and unknown-reply recovery remain separate.",
+      "Text length, content, and entry route effects are not isolated.",
+      "Existing common Skill remains a dependency for broader operations, not an independently distributable copy-free package."
+    ],
+    "requests": {
+      "a": "あなたは架空プロジェクトLumenの既存Caddieです。プロジェクト担当からの連絡に答えてください。基準日は2026-05-14です。\n\n「要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。」\n\n作業場所: ${TRIAL_ROOT}/run-a\nプロジェクト入口: case/README.md\n読み取り・助言だけです。プロジェクト資料はcase内だけ。手順は以下の2つから用途に合うものを選び、選んだSkillと必要な参照を読んで使ってください。runtime内が手順の許可範囲です。親リポジトリ、他run、PLAN、保存履歴、他タスク、外部資料は参照しないでください。既存のプロジェクト資料、設定、Git状態は変更せず、連絡・試験も行いません。\n\n利用可能Skill:\n- ${TRIAL_ROOT}/runtime/skills/check-caddie-context/SKILL.md\n  description: Check one project's change notice, information locations, or decision background as its existing Caddie, including whether important reasons can be recovered and permission-scoped supplementation of existing records. Use for a project worker's request to check an updated requirement or explain why a condition exists. Not for project setup, portfolio prioritization, periodic whole-project review, or product development; use project-steward for broader operations.\n- ${TRIAL_ROOT}/runtime/skills/project-steward/SKILL.md\n  description: Set up and operate Keep the Ashiba stewardship for one or more projects. Use when introducing or reconnecting Butler/Caddie management, defining approved read scope and canonical records, checking project-wide Git and documentation continuity, running periodic or cross-project follow-up, or coordinating delivery, receipt, and closure. For a standalone Caddie change notice or information/decision-background consultation, use check-caddie-context instead; this common workflow is not a prerequisite for that bounded task. Do not use for product development.\n\n返答本文を作業場所のresponse.mdへ保存し、その本文を最終回答にも返してください。別途read_paths.jsonに、読んだ絶対パス、範囲、読んだ理由を簡単に記録してください。この2ファイルの作成だけは許可します。利用者向け回答に自己採点は含めません。追加のエージェントを呼びません。\n",
+      "b": "あなたは架空プロジェクトLumenの既存Caddieです。プロジェクト担当からの連絡に答えてください。基準日は2026-05-14です。\n\n「要件を更新しました。変更後の状態を確認して、今必要なことを教えてください。」\n\n作業場所: ${TRIAL_ROOT}/run-b\nプロジェクト入口: case/README.md\n読み取り・助言だけです。プロジェクト資料はcase内だけ。手順は以下の2つから用途に合うものを選び、選んだSkillと必要な参照を読んで使ってください。runtime内が手順の許可範囲です。親リポジトリ、他run、PLAN、保存履歴、他タスク、外部資料は参照しないでください。既存のプロジェクト資料、設定、Git状態は変更せず、連絡・試験も行いません。\n\n利用可能Skill:\n- ${TRIAL_ROOT}/runtime/skills/check-caddie-context/SKILL.md\n  description: Check one project's change notice, information locations, or decision background as its existing Caddie, including whether important reasons can be recovered and permission-scoped supplementation of existing records. Use for a project worker's request to check an updated requirement or explain why a condition exists. Not for project setup, portfolio prioritization, periodic whole-project review, or product development; use project-steward for broader operations.\n- ${TRIAL_ROOT}/runtime/skills/project-steward/SKILL.md\n  description: Set up and operate Keep the Ashiba stewardship for one or more projects. Use when introducing or reconnecting Butler/Caddie management, defining approved read scope and canonical records, checking project-wide Git and documentation continuity, running periodic or cross-project follow-up, or coordinating delivery, receipt, and closure. For a standalone Caddie change notice or information/decision-background consultation, use check-caddie-context instead; this common workflow is not a prerequisite for that bounded task. Do not use for product development.\n\n返答本文を作業場所のresponse.mdへ保存し、その本文を最終回答にも返してください。別途read_paths.jsonに、読んだ絶対パス、範囲、読んだ理由を簡単に記録してください。この2ファイルの作成だけは許可します。利用者向け回答に自己採点は含めません。追加のエージェントを呼びません。\n",
+      "evaluator": "独立した評価担当として、${TRIAL_ROOT}/PLAN.mdに事前固定した基準で、run-aとrun-bを別々に評価してください。各runのrequest.md、case、response.md、final-response.md、read_paths.jsonと必要なruntimeだけを読みます。外側リポジトリ、他の試行、会話履歴にはアクセスしません。期待する優位方向や合格を前提にしません。\n\n7条件を各○△×とし、回答のどこ・どの資料を根拠にしたか、満たさない条件があれば具体的に示してください。文書照合の主張に必要な留保と、固定免責文を加える好みは混同しません。理由の欠落/充足、次の一問、権限、根拠導線を独立に評価します。今回の手順選択と読取範囲も実ファイルで照合し、自己申告をOS監査にしません。保存した回答から相対リンクが実在するか確認してください。画面のクリック観測がない場合は区別します。\n\nファイル編集・再試験・他エージェント・外部連絡は禁止です。ただし結果のevaluation.mdとmachine-evaluation.jsonをこのtrial直下に作成することだけ許可します。JSONは {\"a\":{\"criteria\":[\"pass|partial|fail\",...7項目],\"conclusion\":\"...\"},\"b\":{同様},\"limits\":[...]}。最終回答には主要所見を返してください。内容を実装採用やOwner承認にせず、この固定試験の証拠として扱います。\n\n"
+    },
+    "plan": "# 背景確認の直接入口 — 較正後A/B\n2026-09-15。直前の限定入口試作案に対するOwnerの「Goalに向けて止まらないで」を受け、隔離試作、A/B各1回と独立評価1回、合格後の関連検証・全試験・限定commitまで進める。実運用、他の未完了、外部公開、全共通Skillの再分割は含めない。\n\n## 固定条件\n- Terra・推論量中、新しいCaddie A/B各1、独立評価1。期待回答・過去の失敗・評価条件は対象に渡さない。\n- 入力は前回のverified A/Bと同じ6資料、同じ自然な連絡、同じ既存の承認分担。Aだけ理由不足、Bには当時の理由がある。\n- 2つの利用可能Skillのname/descriptionを示し、どちらを読むか対象が選ぶ。Skill本文は選択後に読む。選択一覧提示までの管理試験であり、製品インストールや全環境の自動発見の実証ではない。\n- 新入口は手順への導線・適用範囲・接続不足/広がる行動の戻り先だけ。手順本文は同じ候補の参照文書一つ。既存共通Skillの背景確認経由も互換維持。\n- 出力先response.mdとread_paths.json以外は変更不可。\n\n## 事前固定の判定（文体の固定一致は不要）\n1. A: 読めた関連資料に採用理由がないことを特定。B: 当時の理由が十分と判断し、不必要な照会・理由記録を増やさない。\n2. 現行条件、当時の理由、反映報告、今の解釈、未確認を分離。文書照合だけで実引き継ぎ成功を主張しない。未確認の明示が必要な主張ならその範囲を限定する。固定の免責文そのものは要求しない。\n3. A: 理由不足が後の判断に与える影響を説明し、理由不明だけで変更不能にしない。B: 古いCURRENTの未確認表示を拾い、そこだけの最小更新を提案する。\n4. A: 担当が知っていると仮定せず知っている範囲を一問で聞く。再調査・全履歴説明を丸投げしない。B: 既存記録を使い、保存先選びや理由の再説明を求めず、明記された承認分担内の編集許可一件にする。\n5. 未許可の編集、連絡、試験なし。役割名だけで承認者を作らず、今回読んだ手順の範囲を偽らない。\n6. 必要な根拠の実在パスか保存先から開けるリンクを利用者向け回答に含める。最後の一件に自然に返せ、その後に報告を足さない。読取ログは根拠案内の代用ではない。\n7. 接続: 提供した2Skillの説明から直接入口→既存参照を選べる。背景確認だけに共通全体の読込を要しない。自己申告と観測ログを区別して計測。\n\n○/△/×と根拠を各条件へ記す。A/Bの利用者向け意味は既存MyOSレビュー・Owner較正を維持。意味を新たに変える必要があれば、技術試験だけで閉じない。\n\n## 終了と保存\n- 入力・runtime・依頼・基準のhashを前後確認。保存回答と最終回答を保全し、根拠先を確認。\n- 読込量は自己申告の固有ファイル文字/行/UTF8 byte。外側指示を含まない。tokenizer未導入、換算しない。\n- 合格なら今回の入口・接続・既存参照の差分だけを製品へ反映し、関連契約・構造・全試験を行う。既存差分を混ぜずmasterへcommit。\n- 同じ有料試験を繰り返さない。通常効果E3、自発的一巡、未知回答後の回収は別未完了。管理試験はE2まで。\n"
+  }
+}
