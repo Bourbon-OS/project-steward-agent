@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "trial_id": "caddie-receipt-record-offer-20260919",
+  "date": "2026-09-19",
+  "phase": "E2",
+  "base_branch": "master",
+  "base_commit": "2fd4847e636c0b9997971f3796f96177f9364bb1",
+  "models": {
+    "targets": "Terra / medium (4 independent contexts)",
+    "evaluator": "Terra / medium (1 independent context)"
+  },
+  "candidate_bridge": "受領結果を返す時は、新たに分かった重要な理由を後任も既存記録から辿れるかを確認します。辿れなければ、元の相談への回答に続けて、既存記録へつなぐ最小案、対象、必要な許可を一件で示します。辿れるなら、重複記録や不要な許可確認を増やしません。",
+  "runtime_sha256": {
+    "entry": "c790c8bf643b52ac1942f149024e24cb6b2896f9288118a2d91ba9e46fbe7186",
+    "current_procedure": "563855ee1466f80a4117af69ef091daf32eb6e30c7052a56f6d907204abfac4e",
+    "candidate_procedure": "f8ce5e93c94ed46f9f3f6ffedb2a62085b0d9f61989011219e351618c369c7e3"
+  },
+  "outputs": [
+    {
+      "variant": "A",
+      "scenario": "reason-new",
+      "file": "receipt_record_offer_20260919_a_new.md",
+      "sha256": "d235d658a0604cd8ab1801f13eb27b991443dd7008c6d79672719c8b27e37381"
+    },
+    {
+      "variant": "A",
+      "scenario": "reason-recorded",
+      "file": "receipt_record_offer_20260919_a_recorded.md",
+      "sha256": "c2ecffe451d8af8b37d18ff72dd12dceb3589c6a2b9749ad047171a2cd640f3b"
+    },
+    {
+      "variant": "B",
+      "scenario": "reason-new",
+      "file": "receipt_record_offer_20260919_b_new.md",
+      "sha256": "1a2ccd6a2b209228ff0cbb5d4258c1083b598cdc0ceb9295060f647fd1c62519"
+    },
+    {
+      "variant": "B",
+      "scenario": "reason-recorded",
+      "file": "receipt_record_offer_20260919_b_recorded.md",
+      "sha256": "4120290bec6c09339cc158cf14f5975802130b821b0447b702bddc84c29ff07b"
+    }
+  ],
+  "conditions": [
+    {"variant": "A", "scenario": "reason-new", "overall": "×", "criteria": ["△", "×", "○", "○", "△"]},
+    {"variant": "A", "scenario": "reason-recorded", "overall": "○", "criteria": ["○", "○", "○", "○", "△"]},
+    {"variant": "B", "scenario": "reason-new", "overall": "○", "criteria": ["○", "○", "○", "○", "○"]},
+    {"variant": "B", "scenario": "reason-recorded", "overall": "○", "criteria": ["○", "○", "○", "○", "○"]}
+  ],
+  "comparison": "Aは理由が既存記録にある場面では重複を避けたが、新しく分かった理由が既存記録から辿れない場面で補足不要とした。Bは不足時だけ既存変更記録への最小補足と許可確認を示し、記録済みなら理由を重複させず、古い現在地だけを別の最小更新として扱った。",
+  "normal_operation_verified": false,
+  "limits": [
+    "通常運用E3の効果は未確認",
+    "モデル内部の原因は断定しない",
+    "他の依頼文・記録形式・権限境界への一般化は未確認",
+    "古い現在地の更新は採用理由の重複記録とは別に扱う"
+  ]
+}

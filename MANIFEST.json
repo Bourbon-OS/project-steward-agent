@@ -1,0 +1,909 @@
+{
+  "product_version": "v0.3 candidate",
+  "pma_package_version": "0.1.0",
+  "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+  "publication_state": "local public-copy correction candidate; PR update not yet applied",
+  "included_skills": [
+    "project-steward",
+    "check-caddie-context",
+    "receive-butler-result",
+    "review-butler-projects"
+  ],
+  "license_expression": "MIT AND CC-BY-4.0",
+  "metadata_license": "CC-BY-4.0",
+  "previous_candidate_zip_sha256": "3cf719ac024502a20077e83e15f156ffa2ed21d42f3a682f5f1a7a85e3588082",
+  "packaging_changes": [
+    {
+      "path": "LICENSE.md",
+      "change": "added"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "change": "added"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "change": "added"
+    },
+    {
+      "path": "NOTICE.md",
+      "change": "added"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "change": "modified",
+      "previous_sha256": "ba8bdf6328672e6435afced1c7f9df12f3642631679e120c13943be00becbe2d",
+      "reason": "replace the obsolete pending-license statement with the actual candidate scope"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "previous_sha256": "427e4b2a51c495198d13c98bc09b681c3234789d80be25663da2a32ef31896be",
+      "reason": "lead with the public purpose and connect to usable procedures; reflect adopted licenses"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "change": "added"
+    },
+    {
+      "path": "docs/index.md",
+      "change": "added"
+    },
+    {
+      "path": "pyproject.toml",
+      "change": "modified",
+      "previous_sha256": "85ee20d8f4f37a0d8750bced9d1410dea6b5598cdd976ff3de59779f0bd073e7",
+      "reason": "include the license expression and full texts in Python distribution metadata; require setuptools 77 for PEP 639"
+    },
+    {
+      "path": "LICENSE_PENDING.md",
+      "change": "omitted",
+      "reason": "superseded by adopted license scope and complete texts; original candidate preserved"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text"
+      ],
+      "sha256": "ecd1248170d220d34c8ce862c4d010da84803edbac771320533894443ff6d07f",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text"
+      ],
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "license": "license-text"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text"
+      ],
+      "sha256": "f35153b844398f1322c0491634d4aeee445d1f8dcbdb3c95465bad5c4bfdc339",
+      "license": "license-text"
+    },
+    {
+      "path": "NOTICE.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text",
+        "candidate-05: disclose changes made after second opinion",
+        "candidate-06: identify the deliberate public-copy omission"
+      ],
+      "sha256": "e6f99d26a5545fe2fb4ce0767cddfe7a7c8e8361ab3d8cfecc43f3fa6e11020e",
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "c9fe7f8adf2edace718d26ecf45d0b9d99326122e175b8b047a002d8f306a0e2"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "c9099a642c18ed49a5b72fb8b5cc80f3c8c10622ced086dc98b06f0e83bab7cd",
+      "changes": [
+        "new draft packaging material",
+        "replace the obsolete pending-license statement with the actual candidate scope",
+        "candidate-05: disclose bounded source repair instead of claiming byte-identical code"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "c1bb0d496aa0f725583127f21e3413c69950eb6cc6a10d9fec18676b4580d761"
+    },
+    {
+      "path": "README.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "986550951504cc5a8dd2a03e600eda33e2fbe20da7bae6b40b312e3b585ce74d",
+      "changes": [
+        "new draft packaging material",
+        "lead with the public purpose and connect to usable procedures; reflect adopted licenses",
+        "candidate-05: explain rename, old MVP continuity and limits, separate Work Map and safe sample trial"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "ff56fdfdc1bbbe93013ee8f921a5bc9fa6c5df6bde03d75398872ab93355a822"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text",
+        "candidate-05: disclose review repairs and separate starter scope"
+      ],
+      "sha256": "4f7c2c70881b1e463f840f81b6d342fd4e5a2bffa76375ca61edfaae97f23614",
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "97abbec84d721b00cc42fd89f1af4ab9086383eb5474da973ecded91ad5dfbfe"
+    },
+    {
+      "path": "docs/concept.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/concept.md",
+      "source_sha256": "3da146f83ac7e27f206a0b8eb3ab9abef9c41b25073618c39f44787bd9f63397",
+      "sha256": "3da146f83ac7e27f206a0b8eb3ab9abef9c41b25073618c39f44787bd9f63397",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/decisions/2026-08-02-decision-closure-gate.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/decisions/2026-08-02-decision-closure-gate.md",
+      "source_sha256": "bf36ba48d8fcbca61c5c35b404af494f9166baae53f8f1adb23037b59e70c89a",
+      "sha256": "bf36ba48d8fcbca61c5c35b404af494f9166baae53f8f1adb23037b59e70c89a",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/decisions/2026-08-02-steward-role-placement.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/decisions/2026-08-02-steward-role-placement.md",
+      "source_sha256": "7f9c7ffc682597f3d8542b4e107e9292e9a7294ac1dc352216a409ea8851109b",
+      "sha256": "7a981db3ff591ed9a4f93670cc2ade1f1a6dfcadbc6b3fc95da09bb84cd8c6d2",
+      "changes": [
+        "excluded development reference marked as omitted: docs/research/naming_clearance_2026-07-31.md",
+        "excluded development reference marked as omitted: docs/proposals/2026-08-02-public-name-and-role-labels.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/decisions/2026-08-06-public-concept-and-role-language.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/decisions/2026-08-06-public-concept-and-role-language.md",
+      "source_sha256": "44255993e1cd448b8d4afd2ec08a1811a1fc6d00457fe44e9d7a32646d870cf5",
+      "sha256": "9a8580405498a2cf34798230e0f3307a32e2b5966113c2a2f4a8bdfb20dfd823",
+      "changes": [
+        "excluded development reference marked as omitted: docs/proposals/2026-08-02-public-name-and-role-labels.md",
+        "excluded development reference marked as omitted: docs/research/naming_clearance_2026-07-31.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/decisions/2026-08-16-public-name-direction.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/decisions/2026-08-16-public-name-direction.md",
+      "source_sha256": "5a91cf2dda16ad0c9784c871925c86e23c6481a7e7e45a8b3d728ea2409f1225",
+      "sha256": "4a37a211dff50c28519c81811bf19997adbc61b7cf69738dc89556d761c593e1",
+      "changes": [
+        "excluded development reference marked as omitted: docs/research/naming_clearance_2026-07-31.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/design.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/design.md",
+      "source_sha256": "1c415c884c72b279cf7f28eec0ec21d071d8a7da08c88a08997755dee0b2fa05",
+      "sha256": "9d90fba7c2d23dbc99b4bb6edafbec4d6438637df842096b77cb3d9d10904763",
+      "changes": [
+        "excluded development reference marked as omitted: docs/mvp_plan.md",
+        "excluded development reference marked as omitted: docs/operations/keep_the_ashiba_role_model.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/development-boundary.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "95a92dccb2352542f99a4b83ef42807f8d8f61dc55eafc4f3478677d76288486",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/getting-started.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "26ea532bfe339334043dc190d1b774d2d72fd9c315d8ec214a424334f588167f",
+      "changes": [
+        "new draft packaging material",
+        "candidate-05: add fictional reason recovery flow, observation limits and separate starter conditions"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "422f45839afa7d8e0438e31068a64a090438e0385395bfec405d7d35c40a819c"
+    },
+    {
+      "path": "docs/index.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "new distribution documentation or license text"
+      ],
+      "sha256": "581a7c84b52654d7b75769fc9a6cfe7fc3a20cf3393955d6343be62bebf0f862",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/principles.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/principles.md",
+      "source_sha256": "608ab3c054e1a392349bbd01e42341a1402b7029a4377aa5b8db8888a15351da",
+      "sha256": "ffff30a737885012da85582148dae19bf16302a63279c9ae0425425f5caf10ac",
+      "changes": [
+        "excluded development reference marked as omitted: docs/mvp_plan.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/requirements.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "docs/requirements.md",
+      "source_sha256": "7081eb3bff40fdecaac9d6f6cb967771f03f8613b170847bfc3b7b17a338c057",
+      "sha256": "d7bd259853f79de591adf73145ec2a3cd61b74d2dbfe25499a729d46529290c0",
+      "changes": [
+        "excluded development reference marked as omitted: docs/mvp_plan.md"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "examples/project_list.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "8d1e6f196da52c3766359a194a4163fe5d84e5e0b0e40fbe3e868abd6c500db6",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "examples/sample-project/.project-agent.yml",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "6990dabc31a7328b8b08e72c4e58bb179bf7d640a342daa68975f9e62b69dce2",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "examples/sample-project/PROJECT_STATUS.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "e052e6a24c4c58a4718e83bdd57d79c5a982b4839a6c95620b78fe02b1337eb7",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "examples/sample-project/README.md",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "7c7142e5275b52a871ddda8f1407efe6c03feac857e34b4cc1bf36a93e8e00cf",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "pyproject.toml",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "pyproject.toml",
+      "source_sha256": "85ee20d8f4f37a0d8750bced9d1410dea6b5598cdd976ff3de59779f0bd073e7",
+      "sha256": "86e5c2c07515dbbcd56d34310751e8cc180755e7e705a56e722abedd9852810a",
+      "changes": [
+        "include the license expression and full texts in Python distribution metadata; require setuptools 77 for PEP 639"
+      ],
+      "license": "MIT"
+    },
+    {
+      "path": "skills/check-caddie-context/SKILL.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/check-caddie-context/SKILL.md",
+      "source_sha256": "c790c8bf643b52ac1942f149024e24cb6b2896f9288118a2d91ba9e46fbe7186",
+      "sha256": "c790c8bf643b52ac1942f149024e24cb6b2896f9288118a2d91ba9e46fbe7186",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/SKILL.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/SKILL.md",
+      "source_sha256": "40a120dd96f4fd8c2f36cbbbc0848593f5e42a357aca25a95fc83b0885bc36b9",
+      "sha256": "2da4c1c552670eaa85199f5db97aa459b62a9a390ac2acf93669bd13098ea299",
+      "changes": [
+        "development-only route redirected to the package boundary note; unused legacy-note pointers omitted"
+      ],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/caddie_context_recovery.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/caddie_context_recovery.md",
+      "source_sha256": "f8ce5e93c94ed46f9f3f6ffedb2a62085b0d9f61989011219e351618c369c7e3",
+      "sha256": "f8ce5e93c94ed46f9f3f6ffedb2a62085b0d9f61989011219e351618c369c7e3",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/caddie_placement.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/caddie_placement.md",
+      "source_sha256": "1dd7859bd73e9e8c67ffd274a4bbc9fa99152d7dedd1d7d171c4214d90b9c272",
+      "sha256": "1dd7859bd73e9e8c67ffd274a4bbc9fa99152d7dedd1d7d171c4214d90b9c272",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/caddie_project_next_step.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/caddie_project_next_step.md",
+      "source_sha256": "7883d4dbf783f8b144ade16f36c674c9400b2472d9a71b9bb3b22565e9a57d31",
+      "sha256": "7883d4dbf783f8b144ade16f36c674c9400b2472d9a71b9bb3b22565e9a57d31",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/one_off_confirmation.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/one_off_confirmation.md",
+      "source_sha256": "b05d45f1eab7f7473008b39042af575a0e7b989a564ab3c06238b82ecfc86acc",
+      "sha256": "b05d45f1eab7f7473008b39042af575a0e7b989a564ab3c06238b82ecfc86acc",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/owner_problem_handoff.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/owner_problem_handoff.md",
+      "source_sha256": "161dcf529f5ad6ee3a56c02022b9c707f7566c6c4a123f247bb1feb7b4f73e49",
+      "sha256": "161dcf529f5ad6ee3a56c02022b9c707f7566c6c4a123f247bb1feb7b4f73e49",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/periodic_review.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/periodic_review.md",
+      "source_sha256": "580b57187c912c5daae9b9a2a34348d88c99883aeed06504c99a1145e9418fc1",
+      "sha256": "580b57187c912c5daae9b9a2a34348d88c99883aeed06504c99a1145e9418fc1",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/result_receipt.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/result_receipt.md",
+      "source_sha256": "d083d0c2a3bca60d2c5a37dad85d1867431cc4febbedaeb86922149ee7cd9da1",
+      "sha256": "d083d0c2a3bca60d2c5a37dad85d1867431cc4febbedaeb86922149ee7cd9da1",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/result_return.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/result_return.md",
+      "source_sha256": "375d410e8b6f444f5de5e132dd327dc74afa3ab6efa4b68d323dc6db425e0024",
+      "sha256": "375d410e8b6f444f5de5e132dd327dc74afa3ab6efa4b68d323dc6db425e0024",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/references/stewardship_rules.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/stewardship_rules.md",
+      "source_sha256": "9767f81702091bd8e5795ed03db2354a2942fa186661b1bdbfece363caeba456",
+      "sha256": "a988daa00b828fc729d7735675ea1ec219e39cfb787c78d9787f34eca393aa4d",
+      "changes": [
+        "candidate-05: remove individual live-case paragraph; use target-project canonical branch"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "9767f81702091bd8e5795ed03db2354a2942fa186661b1bdbfece363caeba456"
+    },
+    {
+      "path": "skills/project-steward/references/timing_and_model_policy.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/references/timing_and_model_policy.md",
+      "source_sha256": "500f68174bb44f08f5f98f7a324b7cd0942689f4016f2073260f5bc491fcbfa8",
+      "sha256": "500f68174bb44f08f5f98f7a324b7cd0942689f4016f2073260f5bc491fcbfa8",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/templates/butler/AGENTS.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/templates/butler/AGENTS.md",
+      "source_sha256": "9c3939197ec3600821515be12ca3de69f5d0f1e3f4b0b4f1db8f123e50ffd99c",
+      "sha256": "9c3939197ec3600821515be12ca3de69f5d0f1e3f4b0b4f1db8f123e50ffd99c",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/templates/caddie_setup.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/templates/caddie_setup.md",
+      "source_sha256": "a8eb4bbbb53478f169dffd0052b06f79cdf1b8620285a539a0235cc28c9c0856",
+      "sha256": "a8eb4bbbb53478f169dffd0052b06f79cdf1b8620285a539a0235cc28c9c0856",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/project-steward/templates/project_list.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/project-steward/templates/project_list.md",
+      "source_sha256": "7ca2e235e500e20c73ebe6762fb26b91b1b4d6f90dacae0143fdfe717dfad1a9",
+      "sha256": "7ca2e235e500e20c73ebe6762fb26b91b1b4d6f90dacae0143fdfe717dfad1a9",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/receive-butler-result/SKILL.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/receive-butler-result/SKILL.md",
+      "source_sha256": "25a365362372a9204e827dc463f8b73746b21204c54350da7741bdb20c372c72",
+      "sha256": "108ab28933e2c0e30a372420c04044d4166511035deebf4b1ebfe2eef773d2df",
+      "changes": [
+        "candidate-05: replace nonexistent Work Map procedure route with explicit handover boundary"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "25a365362372a9204e827dc463f8b73746b21204c54350da7741bdb20c372c72"
+    },
+    {
+      "path": "skills/review-butler-projects/SKILL.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "skills/review-butler-projects/SKILL.md",
+      "source_sha256": "4c8ee0f45cfc8a6f84adf3741ed40c20cf0be29898bff31c825755fd3c27f88a",
+      "sha256": "4c8ee0f45cfc8a6f84adf3741ed40c20cf0be29898bff31c825755fd3c27f88a",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "src/pma/__init__.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/__init__.py",
+      "source_sha256": "8eef5b1c3e2b9393dea08dec94ea3ed028fb7f9515492bbe9e5638826e78edd8",
+      "sha256": "8eef5b1c3e2b9393dea08dec94ea3ed028fb7f9515492bbe9e5638826e78edd8",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/__main__.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/__main__.py",
+      "source_sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+      "sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/cli.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/cli.py",
+      "source_sha256": "15f110b6b7da4ac8e3d5239c45cc40b01455326b088ebaa2da816d9fac0d5195",
+      "sha256": "15f110b6b7da4ac8e3d5239c45cc40b01455326b088ebaa2da816d9fac0d5195",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/config.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/config.py",
+      "source_sha256": "bd09e6c905f44f2a1c2d37b5d3694faa269e41b95e65342c94519432b3e92652",
+      "sha256": "bd09e6c905f44f2a1c2d37b5d3694faa269e41b95e65342c94519432b3e92652",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/file_safety.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/file_safety.py",
+      "source_sha256": "ddd58c41ded4007411575faf81565a270effb527cc86f171d668e8407565eadf",
+      "sha256": "ddd58c41ded4007411575faf81565a270effb527cc86f171d668e8407565eadf",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/fixed_input.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/fixed_input.py",
+      "source_sha256": "886d858155b4cdb383314615a114dbaffa8c5450f31bc364bb930ba9e5020744",
+      "sha256": "886d858155b4cdb383314615a114dbaffa8c5450f31bc364bb930ba9e5020744",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/followups.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/followups.py",
+      "source_sha256": "c06fb291574c7cf399a9e817df74925240ca8baf7165232afc18eaa85c4f362c",
+      "sha256": "c06fb291574c7cf399a9e817df74925240ca8baf7165232afc18eaa85c4f362c",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/git_utils.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/git_utils.py",
+      "source_sha256": "d9f3179625f0b349295ca198ec4399cba82053f736e97df112a26a7cc681cf40",
+      "sha256": "5ef41b6ed848e4dea41f9adee5721c5350ee6b49a1625d64a59bdbf4c667b6b0",
+      "changes": [
+        "candidate-05: suppress optional Git index refresh in sensor reads"
+      ],
+      "license": "MIT",
+      "previous_candidate_sha256": "d9f3179625f0b349295ca198ec4399cba82053f736e97df112a26a7cc681cf40"
+    },
+    {
+      "path": "src/pma/handoff.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/handoff.py",
+      "source_sha256": "06a2a01e0133caf5bb74438c7f411bcf3e11d4e02148cf546328be139ee4897b",
+      "sha256": "06a2a01e0133caf5bb74438c7f411bcf3e11d4e02148cf546328be139ee4897b",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/report.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/report.py",
+      "source_sha256": "78c8fbc7be97986115b864f4d6e82a9ebef6132bbca87a1a1aa2269e3936c5cb",
+      "sha256": "78c8fbc7be97986115b864f4d6e82a9ebef6132bbca87a1a1aa2269e3936c5cb",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/scan.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/scan.py",
+      "source_sha256": "28edcc1f6ba131201e5486ccf0e91af4c025b813b4a662e6d2865d7b46234cbb",
+      "sha256": "28edcc1f6ba131201e5486ccf0e91af4c025b813b4a662e6d2865d7b46234cbb",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "src/pma/status.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "src/pma/status.py",
+      "source_sha256": "0661f70adbdfa7a3412d2ffd0b1ca30692e60fa1ddfc9510a017fb6565215f06",
+      "sha256": "0661f70adbdfa7a3412d2ffd0b1ca30692e60fa1ddfc9510a017fb6565215f06",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/__init__.py",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "sha256": "009260258dccf5b8dcc712d4e54b734e9b728d9dc2304fb0fc21b5abad7c695f",
+      "changes": [
+        "new draft packaging material"
+      ],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/fixtures/butler_support_gate_lines.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/butler_support_gate_lines.json",
+      "source_sha256": "51993b68d837c2c33f83d782299a208863ce2b8e02b7d5557d0088e2606a2540",
+      "sha256": "51993b68d837c2c33f83d782299a208863ce2b8e02b7d5557d0088e2606a2540",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/change_notice_calibration.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/change_notice_calibration.json",
+      "source_sha256": "4d39ec7c6ae6a632329e7db8d8ce6e32ca9c76e12a355fa7be152ada391cf664",
+      "sha256": "3100b2de5f698e2ac554b10acf9081aa482a9c64930afd77029dda02ae51d9e9",
+      "changes": [
+        "candidate-06: public copy omits two personal review paragraphs; technical results preserved"
+      ],
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "4d39ec7c6ae6a632329e7db8d8ce6e32ca9c76e12a355fa7be152ada391cf664"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/change_notice_verified.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/change_notice_verified.json",
+      "source_sha256": "509b990796dd581952f4ea0c5838e2c9c613c7b484ce615bbfae8edb359dde44",
+      "sha256": "509b990796dd581952f4ea0c5838e2c9c613c7b484ce615bbfae8edb359dde44",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/evaluation.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/evaluation.md",
+      "source_sha256": "c8ef45c294ce409dc90b7a36bc92d21510b8733b978a0e31ead6df197a1c071e",
+      "sha256": "c8ef45c294ce409dc90b7a36bc92d21510b8733b978a0e31ead6df197a1c071e",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/existing_materials.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/existing_materials.json",
+      "source_sha256": "104901e48e2a863a1ec3cf5d6ed78a47b634acf4f9772b97fa59eacf2c3fa315",
+      "sha256": "104901e48e2a863a1ec3cf5d6ed78a47b634acf4f9772b97fa59eacf2c3fa315",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/input.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/input.json",
+      "source_sha256": "64a3bd62d41f5c61b14f604e01c94f4bc31709213eb8b560437238b156c23534",
+      "sha256": "64a3bd62d41f5c61b14f604e01c94f4bc31709213eb8b560437238b156c23534",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919.json",
+      "source_sha256": "59e6d1784fd2ce6b6ac32cdcc77e55f51dc93cc8e40463ea96c47f30d70ef51d",
+      "sha256": "59e6d1784fd2ce6b6ac32cdcc77e55f51dc93cc8e40463ea96c47f30d70ef51d",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_a_new.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_a_new.md",
+      "source_sha256": "d235d658a0604cd8ab1801f13eb27b991443dd7008c6d79672719c8b27e37381",
+      "sha256": "d235d658a0604cd8ab1801f13eb27b991443dd7008c6d79672719c8b27e37381",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_a_recorded.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_a_recorded.md",
+      "source_sha256": "c2ecffe451d8af8b37d18ff72dd12dceb3589c6a2b9749ad047171a2cd640f3b",
+      "sha256": "c2ecffe451d8af8b37d18ff72dd12dceb3589c6a2b9749ad047171a2cd640f3b",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_b_new.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_b_new.md",
+      "source_sha256": "1a2ccd6a2b209228ff0cbb5d4258c1083b598cdc0ceb9295060f647fd1c62519",
+      "sha256": "1a2ccd6a2b209228ff0cbb5d4258c1083b598cdc0ceb9295060f647fd1c62519",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_b_recorded.md",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/receipt_record_offer_20260919_b_recorded.md",
+      "source_sha256": "4120290bec6c09339cc158cf14f5975802130b821b0447b702bddc84c29ff07b",
+      "sha256": "4120290bec6c09339cc158cf14f5975802130b821b0447b702bddc84c29ff07b",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/recorded.json",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/fixtures/caddie_context_recovery/recorded.json",
+      "source_sha256": "f8cb05c875e29d6b81988ee014ad3683e42a4a74125f7ff321ebb391185545fc",
+      "sha256": "f8cb05c875e29d6b81988ee014ad3683e42a4a74125f7ff321ebb391185545fc",
+      "changes": [],
+      "license": "CC-BY-4.0"
+    },
+    {
+      "path": "tests/test_butler_periodic_entry.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_butler_periodic_entry.py",
+      "source_sha256": "a73b6fe0457de7410a8dfaca645e6e04146994dae82bd0442f8b10f0004fdc6b",
+      "sha256": "a73b6fe0457de7410a8dfaca645e6e04146994dae82bd0442f8b10f0004fdc6b",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_butler_receipt_entry.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_butler_receipt_entry.py",
+      "source_sha256": "23fcbcde293d4684f68ba558a9c4a499222f88422a0b6a0889e3834354f9b18f",
+      "sha256": "23fcbcde293d4684f68ba558a9c4a499222f88422a0b6a0889e3834354f9b18f",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_caddie_context_entry.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_caddie_context_entry.py",
+      "source_sha256": "03076058f0129c7161badd0f77e68a55e41dafd97454d34108fd87e0b4c131c3",
+      "sha256": "03076058f0129c7161badd0f77e68a55e41dafd97454d34108fd87e0b4c131c3",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_caddie_context_recovery.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_caddie_context_recovery.py",
+      "source_sha256": "4660261bb17d61b061d6e7f171a0f3355f679337bb031b8d9383c66fe098468f",
+      "sha256": "4660261bb17d61b061d6e7f171a0f3355f679337bb031b8d9383c66fe098468f",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_cli.py",
+      "source_sha256": "0ea22f77633cadaa3d5e784c4785ad9d70451d600a685ea2e725827589b5bbab",
+      "sha256": "0ea22f77633cadaa3d5e784c4785ad9d70451d600a685ea2e725827589b5bbab",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_followups.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_followups.py",
+      "source_sha256": "fe966a61c9122a207715d7472ce696a0a69a6f9aabdf3a050fbfb0b17e385a07",
+      "sha256": "fe966a61c9122a207715d7472ce696a0a69a6f9aabdf3a050fbfb0b17e385a07",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_handoff.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_handoff.py",
+      "source_sha256": "828bfbff6b1788c9cf6d56b2f12e786ff252e6a1bdba31ac35b29487d59c6743",
+      "sha256": "828bfbff6b1788c9cf6d56b2f12e786ff252e6a1bdba31ac35b29487d59c6743",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_report.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_report.py",
+      "source_sha256": "9737aba1823862decceaf28019a1ab6845c0b6b65fd07190c76fe0c964a107d0",
+      "sha256": "9737aba1823862decceaf28019a1ab6845c0b6b65fd07190c76fe0c964a107d0",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_scan.py",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tests/test_scan.py",
+      "source_sha256": "b0c534fe33c010c66aa5765f6e44e9534f4b421208ca4d8cd193319d03633f32",
+      "sha256": "98fe0f93175a6a9ea46d913348d3d712e10a6f800ca4858aa864fd206d61c00b",
+      "changes": [
+        "personal path in synthetic Git-error fixture replaced by a fictional path"
+      ],
+      "license": "MIT"
+    },
+    {
+      "path": "tools/run-tests.ps1",
+      "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
+      "source_path": "tools/run-tests.ps1",
+      "source_sha256": "37879dcfbcc2c02caf4c880135a6e4608d844f7b655130e8808db7bf8761318c",
+      "sha256": "37879dcfbcc2c02caf4c880135a6e4608d844f7b655130e8808db7bf8761318c",
+      "changes": [],
+      "license": "MIT"
+    },
+    {
+      "path": "tests/test_git_read_only.py",
+      "source_commit": null,
+      "source_path": null,
+      "source_sha256": null,
+      "changes": [
+        "candidate-05: real Git optional-refresh control and CLI nonmutation regression tests"
+      ],
+      "license": "MIT",
+      "previous_candidate_sha256": null,
+      "sha256": "31a83eb9d744a469402f7c37de422758551f9c92d514db58d934b5041f4d0358"
+    }
+  ],
+  "candidate_id": "candidate-06",
+  "review_repairs": [
+    {
+      "path": "NOTICE.md",
+      "change": "modified",
+      "previous_sha256": "73d7de5d8cd2b487d350485c19d3f0d5bf8f95653335654ecbaff2b03d7fbbf2",
+      "sha256": "c9fe7f8adf2edace718d26ecf45d0b9d99326122e175b8b047a002d8f306a0e2",
+      "reason": "disclose changes made after second opinion"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "change": "modified",
+      "previous_sha256": "c1bb0d496aa0f725583127f21e3413c69950eb6cc6a10d9fec18676b4580d761",
+      "sha256": "c9099a642c18ed49a5b72fb8b5cc80f3c8c10622ced086dc98b06f0e83bab7cd",
+      "reason": "disclose bounded source repair instead of claiming byte-identical code"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "previous_sha256": "ff56fdfdc1bbbe93013ee8f921a5bc9fa6c5df6bde03d75398872ab93355a822",
+      "sha256": "986550951504cc5a8dd2a03e600eda33e2fbe20da7bae6b40b312e3b585ce74d",
+      "reason": "explain rename, old MVP continuity and limits, separate Work Map and safe sample trial"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "change": "modified",
+      "previous_sha256": "97abbec84d721b00cc42fd89f1af4ab9086383eb5474da973ecded91ad5dfbfe",
+      "sha256": "4f7c2c70881b1e463f840f81b6d342fd4e5a2bffa76375ca61edfaae97f23614",
+      "reason": "disclose review repairs and separate starter scope"
+    },
+    {
+      "path": "docs/getting-started.md",
+      "change": "modified",
+      "previous_sha256": "422f45839afa7d8e0438e31068a64a090438e0385395bfec405d7d35c40a819c",
+      "sha256": "26ea532bfe339334043dc190d1b774d2d72fd9c315d8ec214a424334f588167f",
+      "reason": "add fictional reason recovery flow, observation limits and separate starter conditions"
+    },
+    {
+      "path": "skills/project-steward/references/stewardship_rules.md",
+      "change": "modified",
+      "previous_sha256": "9767f81702091bd8e5795ed03db2354a2942fa186661b1bdbfece363caeba456",
+      "sha256": "a988daa00b828fc729d7735675ea1ec219e39cfb787c78d9787f34eca393aa4d",
+      "reason": "remove individual live-case paragraph; use target-project canonical branch"
+    },
+    {
+      "path": "skills/receive-butler-result/SKILL.md",
+      "change": "modified",
+      "previous_sha256": "25a365362372a9204e827dc463f8b73746b21204c54350da7741bdb20c372c72",
+      "sha256": "108ab28933e2c0e30a372420c04044d4166511035deebf4b1ebfe2eef773d2df",
+      "reason": "replace nonexistent Work Map procedure route with explicit handover boundary"
+    },
+    {
+      "path": "src/pma/git_utils.py",
+      "change": "modified",
+      "previous_sha256": "d9f3179625f0b349295ca198ec4399cba82053f736e97df112a26a7cc681cf40",
+      "sha256": "5ef41b6ed848e4dea41f9adee5721c5350ee6b49a1625d64a59bdbf4c667b6b0",
+      "reason": "suppress optional Git index refresh in sensor reads"
+    },
+    {
+      "path": "tests/test_git_read_only.py",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "31a83eb9d744a469402f7c37de422758551f9c92d514db58d934b5041f4d0358",
+      "reason": "real Git optional-refresh control and CLI nonmutation regression tests"
+    }
+  ],
+  "publication_corrections": [
+    {
+      "path": "NOTICE.md",
+      "previous_sha256": "c9fe7f8adf2edace718d26ecf45d0b9d99326122e175b8b047a002d8f306a0e2",
+      "sha256": "e6f99d26a5545fe2fb4ce0767cddfe7a7c8e8361ab3d8cfecc43f3fa6e11020e",
+      "reason": "identify the deliberate public-copy omission"
+    },
+    {
+      "path": "tests/fixtures/caddie_context_recovery/change_notice_calibration.json",
+      "previous_sha256": "4d39ec7c6ae6a632329e7db8d8ce6e32ca9c76e12a355fa7be152ada391cf664",
+      "sha256": "3100b2de5f698e2ac554b10acf9081aa482a9c64930afd77029dda02ae51d9e9",
+      "reason": "public copy omits two personal review paragraphs; technical results preserved"
+    }
+  ]
+}

@@ -1,36 +1,15 @@
-# ドキュメント索引
+# 文書の入口
 
-**公開状態:** v0.2（docs-only）
+| 知りたいこと | 入口 |
+| --- | --- |
+| 何のための足場か | [コンセプト](concept.md) |
+| どう仕事を止めずに保つか | [KTA原則](principles.md) |
+| v0.2から今回の候補へ何を添えたか | [リリース説明](../RELEASE_NOTES.md) |
+| 自分の環境で試す | [最小の導入](getting-started.md) |
+| Stewardの手順を読む | [共通運用Skill](../skills/project-steward/SKILL.md) |
+| 何を求め、どう設計しているか | [要件](requirements.md)、[設計](design.md) |
+| 製品開発へ戻す相談 | [開発との境界](development-boundary.md) |
+| 候補の範囲と未確認 | [候補状態](../PROJECT_STATUS.md) |
+| 出典、変更、再利用条件 | [NOTICE](../NOTICE.md)、[LICENSE](../LICENSE.md)、[MANIFEST](../MANIFEST.json) |
 
-この公開版は、Project Steward Agent（PSA）の考え方、要件、最初のMVP計画を共有するドキュメントです。実行可能なエージェントやコードは含みません。
-
-## 推奨する読む順番
-
-1. [README](../README.md)：このプロジェクトの短い紹介
-2. [コンセプト](concept.md)：解決したい問題と、Ashiba・KTA・PSAの考え方
-3. [要件](requirements.md)：PSAに期待する振る舞いと、人間に残す判断
-4. [MVP計画](mvp_plan.md)：最初に検証する範囲と、まだ作らないもの
-
-## 公開するもの
-
-- `README.md`
-- `docs/concept.md`
-- `docs/requirements.md`
-- `docs/mvp_plan.md`
-- `docs/index.md`
-- `LICENSE.md`
-- `NOTICE.md`
-
-## 公開しないもの
-
-- 実行可能なエージェントとソースコード
-- テスト、プロンプト、ローカルのエージェント設定
-- 調査メモ、レビュー記録、作業中のドラフト
-- 会社、顧客、個人に固有の情報
-- ローカルの運用記録
-
-v0.1に含まれていた詳細な設計文書は、未検証の実装方法や役割分担をv0.2で固定しないため、公開対象から外します。具体的な実装設計は、MVPの検証を通じて固まった後に改めて公開を検討します。
-
-## ライセンスと出典
-
-公開文書は、別途明記がない限り[CC BY 4.0](../LICENSE.md)で提供します。著作者表示、推奨する引用、第三者資料との関係は[NOTICE](../NOTICE.md)を参照してください。
+要件・設計には未実装のものも含みます。文書に存在する機能を、現在使える機能と同一視せず、候補状態と照合してください。
