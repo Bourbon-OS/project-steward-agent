@@ -4,7 +4,7 @@
 
 成果物が残っていても、「なぜこうしたか」「何が仮対応か」「何が未完了か」がチャットや担当者の記憶に散ると、再開するたびに背景を復元することになります。Ashiba Stewardは、既にあるGit、文書、判断記録を足がかりに、目的と理由と戻り先を薄く保つ考え方、運用手順、軽量な補助CLIです。
 
-この候補は公開前のローカル配布候補です。コード等はMIT、文書・Skill等はCC BY 4.0の方針を反映しています。[適用範囲と全文](LICENSE.md)、[候補状態](PROJECT_STATUS.md)を確認できます。
+v0.3は、手順と道具を自分の環境で試すための配布版です。内容はGitHubの公開repositoryで参照できます。版を固定した配布ZIPの公開状況は[GitHub Releases](https://github.com/Bourbon-OS/project-steward-agent/releases)で確認してください。コード等はMIT、文書・Skill等はCC BY 4.0です。[適用範囲と全文](LICENSE.md)、[配布範囲と確認状況](PROJECT_STATUS.md)を確認できます。
 
 ## この公開で伝えたいこと
 
@@ -53,14 +53,14 @@ python -X utf8 -m pma followups --list ./examples/project_list.md --as-of 2026-0
 python -X utf8 -m pma handoff --path $trialPath --project example-project --trigger manual
 ```
 
-配布候補をローカルへ導入して確認する場合：
+配布一式をローカルへ導入して確認する場合：
 
 ```powershell
 python -m pip install .
 pma --help
 ```
 
-このCLIの配布名は`ashiba-steward`、Python package versionは`0.1.0`です。製品候補の`v0.3`とは別の版です。今回の候補では、読み取り時のGitの任意更新を抑止する限定補修を加え、既存の部品版を維持しています。名前や版から未確認の機能を推測しないでください。
+このCLIの配布名は`ashiba-steward`、Python package versionは`0.1.0`です。配布版の`v0.3`とは別の版です。v0.3では、読み取り時のGitの任意更新を抑止する限定補修を加え、既存の部品版を維持しています。名前や版から未確認の機能を推測しないでください。
 
 ## 安全と制限
 
@@ -72,11 +72,11 @@ pma --help
 - 読み取り量は、宣言された毎回読む情報の合計を観測します。条件付き資料は混ぜず、文字数からtoken数やCodexのクレジット消費を固定比率で推定しません。token測定は任意です。
 - 相手から「承認済み」と聞いただけでは変更許可を増やしません。秘密情報、公開、削除等には実際の許可境界を適用します。
 
-詳しい原則は[KTA原則](docs/principles.md)、仕様は[要件](docs/requirements.md)と[設計](docs/design.md)を参照してください。これらは基準commitの文書で、まだ未実装の要件も含みます。実装範囲は[この候補の状態](PROJECT_STATUS.md)と照合してください。
+詳しい原則は[KTA原則](docs/principles.md)、仕様は[要件](docs/requirements.md)と[設計](docs/design.md)を参照してください。これらは基準commitの文書で、まだ未実装の要件も含みます。実装範囲は[配布範囲と確認状況](PROJECT_STATUS.md)と照合してください。
 
 ## 再確認
 
-Windowsの既存試験は、UTF-8と候補内の一時フォルダを設定する入口を使います。
+Windowsの既存試験は、UTF-8と展開先内の一時フォルダを設定する入口を使います。
 
 ```powershell
 pwsh -NoProfile -File tools/run-tests.ps1
