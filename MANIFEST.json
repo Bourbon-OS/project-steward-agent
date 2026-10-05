@@ -1,8 +1,8 @@
 {
-  "product_version": "v0.3 candidate",
+  "product_version": "v0.3",
   "pma_package_version": "0.1.0",
   "source_commit": "632733e26ccc3399f3f1fc8171190afce4a8a37f",
-  "publication_state": "local public-copy correction candidate; PR update not yet applied",
+  "publication_state": "v0.3 contents published in main; versioned release availability is tracked by GitHub Releases",
   "included_skills": [
     "project-steward",
     "check-caddie-context",
@@ -11,7 +11,7 @@
   ],
   "license_expression": "MIT AND CC-BY-4.0",
   "metadata_license": "CC-BY-4.0",
-  "previous_candidate_zip_sha256": "3cf719ac024502a20077e83e15f156ffa2ed21d42f3a682f5f1a7a85e3588082",
+  "previous_candidate_zip_sha256": "92c51f87b38f273cecf10ebd8565e564774a84150e617cb75253debb286efeaf",
   "packaging_changes": [
     {
       "path": "LICENSE.md",
@@ -68,10 +68,12 @@
       "source_path": null,
       "source_sha256": null,
       "changes": [
-        "new distribution documentation or license text"
+        "new distribution documentation or license text",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
-      "sha256": "ecd1248170d220d34c8ce862c4d010da84803edbac771320533894443ff6d07f",
-      "license": "CC-BY-4.0"
+      "sha256": "e3d572cbe6255c28bb926dfd617a0c8eb81c769dad0711280cc17d30f789b116",
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "ecd1248170d220d34c8ce862c4d010da84803edbac771320533894443ff6d07f"
     },
     {
       "path": "LICENSES/CC-BY-4.0.txt",
@@ -103,39 +105,42 @@
       "changes": [
         "new distribution documentation or license text",
         "candidate-05: disclose changes made after second opinion",
-        "candidate-06: identify the deliberate public-copy omission"
+        "candidate-06: identify the deliberate public-copy omission",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
-      "sha256": "e6f99d26a5545fe2fb4ce0767cddfe7a7c8e8361ab3d8cfecc43f3fa6e11020e",
+      "sha256": "e0a0e47c484dc4e27441eeffe00772706b7c43fec00331386975431780d5b3a9",
       "license": "CC-BY-4.0",
-      "previous_candidate_sha256": "c9fe7f8adf2edace718d26ecf45d0b9d99326122e175b8b047a002d8f306a0e2"
+      "previous_candidate_sha256": "e6f99d26a5545fe2fb4ce0767cddfe7a7c8e8361ab3d8cfecc43f3fa6e11020e"
     },
     {
       "path": "PROJECT_STATUS.md",
       "source_commit": null,
       "source_path": null,
       "source_sha256": null,
-      "sha256": "c9099a642c18ed49a5b72fb8b5cc80f3c8c10622ced086dc98b06f0e83bab7cd",
+      "sha256": "9e094677bec4e527d2c6a0ea4ba58ebeb6153521f6c1dc441151845cd80adc06",
       "changes": [
         "new draft packaging material",
         "replace the obsolete pending-license statement with the actual candidate scope",
-        "candidate-05: disclose bounded source repair instead of claiming byte-identical code"
+        "candidate-05: disclose bounded source repair instead of claiming byte-identical code",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
       "license": "CC-BY-4.0",
-      "previous_candidate_sha256": "c1bb0d496aa0f725583127f21e3413c69950eb6cc6a10d9fec18676b4580d761"
+      "previous_candidate_sha256": "c9099a642c18ed49a5b72fb8b5cc80f3c8c10622ced086dc98b06f0e83bab7cd"
     },
     {
       "path": "README.md",
       "source_commit": null,
       "source_path": null,
       "source_sha256": null,
-      "sha256": "986550951504cc5a8dd2a03e600eda33e2fbe20da7bae6b40b312e3b585ce74d",
+      "sha256": "cffcdd78e2170c79949028747bb953cd2d8d538d33806fa86c68f45febdaa22b",
       "changes": [
         "new draft packaging material",
         "lead with the public purpose and connect to usable procedures; reflect adopted licenses",
-        "candidate-05: explain rename, old MVP continuity and limits, separate Work Map and safe sample trial"
+        "candidate-05: explain rename, old MVP continuity and limits, separate Work Map and safe sample trial",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
       "license": "CC-BY-4.0",
-      "previous_candidate_sha256": "ff56fdfdc1bbbe93013ee8f921a5bc9fa6c5df6bde03d75398872ab93355a822"
+      "previous_candidate_sha256": "986550951504cc5a8dd2a03e600eda33e2fbe20da7bae6b40b312e3b585ce74d"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -144,11 +149,12 @@
       "source_sha256": null,
       "changes": [
         "new distribution documentation or license text",
-        "candidate-05: disclose review repairs and separate starter scope"
+        "candidate-05: disclose review repairs and separate starter scope",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
-      "sha256": "4f7c2c70881b1e463f840f81b6d342fd4e5a2bffa76375ca61edfaae97f23614",
+      "sha256": "5067cee6e11997cce768ba581f027db27957954f97ff64af1ab60f0a86d494e3",
       "license": "CC-BY-4.0",
-      "previous_candidate_sha256": "97abbec84d721b00cc42fd89f1af4ab9086383eb5474da973ecded91ad5dfbfe"
+      "previous_candidate_sha256": "4f7c2c70881b1e463f840f81b6d342fd4e5a2bffa76375ca61edfaae97f23614"
     },
     {
       "path": "docs/concept.md",
@@ -231,13 +237,14 @@
       "source_commit": null,
       "source_path": null,
       "source_sha256": null,
-      "sha256": "26ea532bfe339334043dc190d1b774d2d72fd9c315d8ec214a424334f588167f",
+      "sha256": "3ee2a1163f9807362e245fec83e30ca63c464c54b76e344629e5f791ab98264f",
       "changes": [
         "new draft packaging material",
-        "candidate-05: add fictional reason recovery flow, observation limits and separate starter conditions"
+        "candidate-05: add fictional reason recovery flow, observation limits and separate starter conditions",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
       "license": "CC-BY-4.0",
-      "previous_candidate_sha256": "422f45839afa7d8e0438e31068a64a090438e0385395bfec405d7d35c40a819c"
+      "previous_candidate_sha256": "26ea532bfe339334043dc190d1b774d2d72fd9c315d8ec214a424334f588167f"
     },
     {
       "path": "docs/index.md",
@@ -245,10 +252,12 @@
       "source_path": null,
       "source_sha256": null,
       "changes": [
-        "new distribution documentation or license text"
+        "new distribution documentation or license text",
+        "candidate-07: align publication-status wording with published main; distinguish versioned release availability and trial limits"
       ],
-      "sha256": "581a7c84b52654d7b75769fc9a6cfe7fc3a20cf3393955d6343be62bebf0f862",
-      "license": "CC-BY-4.0"
+      "sha256": "c3b9acd9715597a7367bd70006e0152ffd96bee00e43b7b1ca691424bc800f71",
+      "license": "CC-BY-4.0",
+      "previous_candidate_sha256": "581a7c84b52654d7b75769fc9a6cfe7fc3a20cf3393955d6343be62bebf0f862"
     },
     {
       "path": "docs/principles.md",
@@ -826,7 +835,7 @@
       "sha256": "31a83eb9d744a469402f7c37de422758551f9c92d514db58d934b5041f4d0358"
     }
   ],
-  "candidate_id": "candidate-06",
+  "candidate_id": "candidate-07",
   "review_repairs": [
     {
       "path": "NOTICE.md",
@@ -905,5 +914,57 @@
       "sha256": "3100b2de5f698e2ac554b10acf9081aa482a9c64930afd77029dda02ae51d9e9",
       "reason": "public copy omits two personal review paragraphs; technical results preserved"
     }
-  ]
+  ],
+  "distribution_preparation": {
+    "public_source_commit": "412a93793bc984031d81dc94a17a3745e0692c7f",
+    "previous_candidate_id": "candidate-06",
+    "previous_candidate_zip_sha256": "92c51f87b38f273cecf10ebd8565e564774a84150e617cb75253debb286efeaf",
+    "previous_candidate_parent_zip_sha256": "3cf719ac024502a20077e83e15f156ffa2ed21d42f3a682f5f1a7a85e3588082",
+    "intended_release_stage": "trial (GitHub pre-release proposed; not created by preparation)",
+    "release_status_url": "https://github.com/Bourbon-OS/project-steward-agent/releases",
+    "changes": [
+      {
+        "path": "LICENSE.md",
+        "previous_sha256": "ecd1248170d220d34c8ce862c4d010da84803edbac771320533894443ff6d07f",
+        "sha256": "e3d572cbe6255c28bb926dfd617a0c8eb81c769dad0711280cc17d30f789b116",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "NOTICE.md",
+        "previous_sha256": "e6f99d26a5545fe2fb4ce0767cddfe7a7c8e8361ab3d8cfecc43f3fa6e11020e",
+        "sha256": "e0a0e47c484dc4e27441eeffe00772706b7c43fec00331386975431780d5b3a9",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "PROJECT_STATUS.md",
+        "previous_sha256": "c9099a642c18ed49a5b72fb8b5cc80f3c8c10622ced086dc98b06f0e83bab7cd",
+        "sha256": "9e094677bec4e527d2c6a0ea4ba58ebeb6153521f6c1dc441151845cd80adc06",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "README.md",
+        "previous_sha256": "986550951504cc5a8dd2a03e600eda33e2fbe20da7bae6b40b312e3b585ce74d",
+        "sha256": "cffcdd78e2170c79949028747bb953cd2d8d538d33806fa86c68f45febdaa22b",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "RELEASE_NOTES.md",
+        "previous_sha256": "4f7c2c70881b1e463f840f81b6d342fd4e5a2bffa76375ca61edfaae97f23614",
+        "sha256": "5067cee6e11997cce768ba581f027db27957954f97ff64af1ab60f0a86d494e3",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "docs/getting-started.md",
+        "previous_sha256": "26ea532bfe339334043dc190d1b774d2d72fd9c315d8ec214a424334f588167f",
+        "sha256": "3ee2a1163f9807362e245fec83e30ca63c464c54b76e344629e5f791ab98264f",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      },
+      {
+        "path": "docs/index.md",
+        "previous_sha256": "581a7c84b52654d7b75769fc9a6cfe7fc3a20cf3393955d6343be62bebf0f862",
+        "sha256": "c3b9acd9715597a7367bd70006e0152ffd96bee00e43b7b1ca691424bc800f71",
+        "reason": "align publication-status wording with published main; distinguish versioned release availability and trial limits"
+      }
+    ]
+  }
 }

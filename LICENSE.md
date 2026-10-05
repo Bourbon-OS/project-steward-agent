@@ -8,7 +8,7 @@ Copyright (c) 2026 Bourbon-OS
 | --- | --- |
 | `src/`のコード、`tests/`のPython試験、`tools/`の実行ツール、`pyproject.toml` | [MIT全文](LICENSES/MIT.txt) |
 | `docs/`、`skills/`の手順・参照・ひな形、`examples/`、`tests/fixtures/`の資料・架空記録 | [CC BY 4.0全文](LICENSES/CC-BY-4.0.txt) |
-| README、候補状態、リリース説明、NOTICE、ライセンスの範囲説明、MANIFEST | [CC BY 4.0全文](LICENSES/CC-BY-4.0.txt) |
+| README、配布範囲と確認状況、リリース説明、NOTICE、ライセンスの範囲説明、MANIFEST | [CC BY 4.0全文](LICENSES/CC-BY-4.0.txt) |
 
 文書を共有・改変する場合は、Bourbon-OSの出典、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)へのリンク、変更したことを示してください。コードの再利用ではMITの著作権表示と許諾文を保持してください。具体的な条件はそれぞれの全文によります。
 
